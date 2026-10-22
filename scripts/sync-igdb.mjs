@@ -14,8 +14,8 @@ const { access_token: accessToken } = await tokenResponse.json()
 
 const fetchPage = async (lastId) => {
   const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date;
-  where platforms.id = (3,6,14,48,49,130,167,169)
-    & category = (0,2,4,8,9,10)
+  where platforms.id = (6,14,48,49,130,167,169)
+    & (category = 0 | category = 2 | category = 4 | category = 8 | category = 9 | category = 10)
     & id > ${lastId};
   sort id asc; limit 500;`
   const response = await fetch('https://api.igdb.com/v4/games', {
@@ -68,6 +68,8 @@ for (const item of source) {
     description: game.description !== 'A game ready for your next adventure.' ? game.description : previous?.description,
   })
 }
+
+if (!source.length) throw new Error('IGDB returned no games; existing catalog was not replaced')
 
 await mkdir('public', { recursive: true })
 await writeFile('public/catalog.json', `${JSON.stringify([...merged.values()], null, 2)}\n`)
