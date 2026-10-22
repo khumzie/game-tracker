@@ -1,0 +1,10 @@
+{
+  "name": "gameflow",
+  "short_name": "gameflow",
+  "description": "A fast, personal game tracker.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171614",
+  "theme_color": "#171614",
+  "icons": []
+}
