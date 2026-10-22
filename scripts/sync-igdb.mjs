@@ -22,9 +22,18 @@ const mapPlatform = (name) => {
   return null
 }
 
-const fetchPage = async (lastId) => {
+const targetPlatforms = [
+  { id: 6, name: 'PC' },
+  { id: 48, name: 'PlayStation 4' },
+  { id: 167, name: 'PlayStation 5' },
+  { id: 49, name: 'Xbox One' },
+  { id: 169, name: 'Xbox Series' },
+  { id: 130, name: 'Switch' },
+]
+
+const fetchPage = async (platformId, lastId) => {
   const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date,category,parent_game;
-  where id > ${lastId};
+  where platforms = (${platformId}) & id > ${lastId};
   sort id asc; limit 500;`
   for (let attempt = 1; attempt <= 5; attempt += 1) {
     const response = await fetch('https://api.igdb.com/v4/games', {
@@ -38,25 +47,28 @@ const fetchPage = async (lastId) => {
   }
 }
 
-const source = []
-let lastId = 0
-let pageCount = 0
-while (true) {
-  const page = await fetchPage(lastId)
-  source.push(...page.filter((item) => {
-    const category = item.category ?? 0
-    const allowedCategory = [0, 2, 4, 8, 9, 10].includes(category)
-    const platforms = item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || []
-    const title = item.name?.toLowerCase() || ''
-    const cosmeticOnly = /(costume|skin|outfit|cosmetic|soundtrack|avatar|currency|wallpaper|artbook|season pass|bundle|pack)\b/.test(title)
-    return allowedCategory && !cosmeticOnly && platforms.length > 0
-  }))
-  if (page.length < 500) break
-  lastId = page[page.length - 1].id
-  pageCount += 1
-  if (pageCount % 10 === 0) console.log(`Scanned ${pageCount * 500} IGDB records; ${source.length} match the target catalog.`)
-  await new Promise((resolve) => setTimeout(resolve, 250))
+const sourceById = new Map()
+for (const platform of targetPlatforms) {
+  let lastId = 0
+  let pageCount = 0
+  while (true) {
+    const page = await fetchPage(platform.id, lastId)
+    page.filter((item) => {
+      const category = item.category ?? 0
+      const allowedCategory = [0, 2, 4, 8, 9, 10].includes(category)
+      const platforms = item.platforms?.map((itemPlatform) => mapPlatform(itemPlatform.name)).filter(Boolean) || []
+      const title = item.name?.toLowerCase() || ''
+      const cosmeticOnly = /(costume|skin|outfit|cosmetic|soundtrack|avatar|currency|wallpaper|artbook|season pass|bundle|pack)\b/.test(title)
+      return allowedCategory && !cosmeticOnly && platforms.length > 0
+    }).forEach((item) => sourceById.set(item.id, item))
+    if (page.length < 500) break
+    lastId = page[page.length - 1].id
+    pageCount += 1
+    if (pageCount % 10 === 0) console.log(`Scanned ${platform.name}: ${pageCount * 500} records; ${sourceById.size} unique matches.`)
+    await new Promise((resolve) => setTimeout(resolve, 250))
+  }
 }
+const source = [...sourceById.values()]
 
 if (!source.length) throw new Error('IGDB returned no matching games; existing catalog was not replaced')
 

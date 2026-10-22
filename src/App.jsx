@@ -129,12 +129,16 @@ function App() {
         const indexResponse = await fetch(`${root}catalog/index.json`, { cache: 'no-store' })
         if (!indexResponse.ok) throw new Error(`Catalog index returned ${indexResponse.status}`)
         const index = await indexResponse.json()
-        const chunks = await Promise.all(index.chunks.map((chunk) => fetch(`${root}catalog/${chunk}`, { cache: 'no-store' }).then((response) => {
+        for (const [chunkIndex, chunk] of index.chunks.entries()) {
+          const response = await fetch(`${root}catalog/${chunk}`, { cache: 'no-store' })
           if (!response.ok) throw new Error(`Catalog chunk returned ${response.status}`)
-          return response.json()
-        })))
+          const chunkGames = await response.json()
+          if (!cancelled) {
+            setImportStatus(`Loading catalog chunk ${chunkIndex + 1} of ${index.chunks.length}`)
+            setCatalog((current) => mergeGames(current, chunkGames))
+          }
+        }
         if (!cancelled) {
-          setCatalog((current) => mergeGames(current, chunks.flat()))
           setImportStatus(`Loaded ${index.count.toLocaleString()} games from the latest catalog.`)
         }
       } catch (error) {
