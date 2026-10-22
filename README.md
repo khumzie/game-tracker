@@ -58,3 +58,5 @@ npm run build
 ```
 
 The app includes a web manifest and registers its service worker so it can be added to an iPhone home screen when served over HTTPS.
+
+Artwork uses IGDB's optimized cover transform rather than full-resolution originals. The service worker stores artwork in a separate runtime cache as cards are viewed, so previously seen covers remain available offline without adding hundreds of megabytes to the GitHub repository. New artwork is fetched when online and cached automatically; unvisited covers are not downloaded until needed.
