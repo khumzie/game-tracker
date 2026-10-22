@@ -27,3 +27,8 @@ jobs:
           git add public/catalog.json
           git diff --cached --quiet || git commit -m "chore: sync game catalog"
           git push
+      - name: Trigger Pages deployment
+        if: success()
+        run: gh workflow run deploy-pages.yml --repo "${{ github.repository }}" --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

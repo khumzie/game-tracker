@@ -12,16 +12,24 @@ const tokenResponse = await fetch('https://id.twitch.tv/oauth2/token', {
 if (!tokenResponse.ok) throw new Error(`Twitch authentication failed: ${tokenResponse.status}`)
 const { access_token: accessToken } = await tokenResponse.json()
 
-const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date;
-where platforms.id = (6,48,49,130,167,169,170,39) & version_parent = null;
-sort first_release_date desc; limit 500;`
-const response = await fetch('https://api.igdb.com/v4/games', {
-  method: 'POST',
-  headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
-  body: query,
-})
-if (!response.ok) throw new Error(`IGDB returned ${response.status}`)
-const source = await response.json()
+const fetchPage = async (offset) => {
+  const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date;
+  where platforms.id = (6,48,49,130,167,169,170,39) & version_parent = null;
+  sort first_release_date desc; limit 500; offset ${offset};`
+  const response = await fetch('https://api.igdb.com/v4/games', {
+    method: 'POST',
+    headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
+    body: query,
+  })
+  if (!response.ok) throw new Error(`IGDB returned ${response.status}`)
+  return response.json()
+}
+const source = []
+for (let offset = 0; offset < 10000; offset += 500) {
+  const page = await fetchPage(offset)
+  source.push(...page)
+  if (page.length < 500) break
+}
 
 const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
 const mapPlatform = (name) => {
