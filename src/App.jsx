@@ -261,6 +261,14 @@ function App() {
     delete next[id]
     return next
   })
+  const recategorizeGame = (id, decision) => {
+    if (decision === 'discover') {
+      resetGame(id)
+      setActiveTab('discover')
+      return
+    }
+    setDecisions((current) => ({ ...current, [id]: decision }))
+  }
 
   const visibleLibrary = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
   const rotation = Math.max(-12, Math.min(12, drag.x / 14))
@@ -326,7 +334,7 @@ function App() {
       ) : (
         <section className="library">
           <div className="library-heading"><div><p className="eyebrow">{activeTab === 'liked' ? 'YOUR SHORTLIST' : activeTab === 'played' ? 'YOUR HISTORY' : 'YOUR DECLINED GAMES'}</p><h2>{activeTab === 'liked' ? 'Want to play' : activeTab === 'played' ? 'Played games' : 'Declined'}</h2></div><span className="count-pill">{visibleLibrary.length} games</span></div>
-          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.image ? <img className="mini-image" src={game.image} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><button className="undo" onClick={() => resetGame(game.id)} aria-label={`Move ${game.title} back to Discover`}>↺</button></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
+          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.image ? <img className="mini-image" src={game.image} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><label className="recategorize"><span className="sr-only">Move {game.title} to</span><select value={decisions[game.id]} onChange={(event) => recategorizeGame(game.id, event.target.value)}><option value="liked">Want to play</option><option value="played">Played</option><option value="skipped">Declined</option><option value="discover">Discover</option></select></label></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
         </section>
       )}
 
