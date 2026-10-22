@@ -15,13 +15,33 @@ const mapPlatform = (name) => {
   return null
 }
 
+const importFreeToGame = async () => {
+  const response = await fetch('https://www.freetogame.com/api/games', {
+    headers: { 'User-Agent': 'gameflow-catalog-sync/1.0' },
+  })
+  if (!response.ok) throw new Error(`FreeToGame returned ${response.status}`)
+  const source = await response.json()
+  return source.map((game) => ({
+    id: `freetogame-${game.id}`,
+    title: game.title,
+    genre: game.genre || 'Game',
+    hours: 'Free to play',
+    description: game.short_description || 'A free game ready for your next adventure.',
+    badge: 'Free to play',
+    image: game.thumbnail,
+    platforms: [mapPlatform(game.platform)].filter(Boolean),
+  }))
+}
+
 const queryBatch = async (offset) => {
-  const query = `SELECT ?game ?gameLabel ?platformLabel WHERE {
+  const query = `SELECT ?game ?gameLabel ?platformLabel ?image ?description WHERE {
     ?game wdt:P31/wdt:P279* wd:Q7889.
     ?game wdt:P400 ?platform.
     ?platform rdfs:label ?platformLabel.
     FILTER(LANG(?platformLabel) = "en")
     FILTER(REGEX(?platformLabel, "${platformPattern}", "i"))
+    OPTIONAL { ?game wdt:P18 ?image. }
+    OPTIONAL { ?game schema:description ?description. FILTER(LANG(?description) = "en") }
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
   } ORDER BY ?game LIMIT ${batchSize} OFFSET ${offset}`
   for (let attempt = 1; attempt <= 5; attempt += 1) {
@@ -38,11 +58,22 @@ const queryBatch = async (offset) => {
 
 const existing = JSON.parse(await readFile('public/catalog.json', 'utf8').catch(() => '[]'))
 const merged = new Map(existing.map((game) => [normalizeTitle(game.title), game]))
+const freeToPlayGames = await importFreeToGame()
+for (const game of freeToPlayGames) {
+  const key = normalizeTitle(game.title)
+  merged.set(key, { ...(merged.get(key) || {}), ...game, platforms: [...new Set([...(merged.get(key)?.platforms || []), ...game.platforms])] })
+}
 let offset = 0
 let rows = 0
 
-for (let batch = 0; batch < maxBatches; batch += 1) {
-  const data = await queryBatch(offset)
+for (let batch = 0; batch < maxBatches && process.env.SYNC_WIKIDATA !== 'false'; batch += 1) {
+  let data
+  try {
+    data = await queryBatch(offset)
+  } catch (error) {
+    console.warn(`Optional Wikidata sync stopped: ${error.message}`)
+    break
+  }
   const bindings = data.results.bindings
   if (!bindings.length) break
   for (const record of bindings) {
@@ -60,6 +91,8 @@ for (let batch = 0; batch < maxBatches; batch += 1) {
     }
     const platform = mapPlatform(record.platformLabel?.value || '')
     if (platform && !game.platforms.includes(platform)) game.platforms.push(platform)
+    if (record.image?.value && !game.image) game.image = record.image.value
+    if (record.description?.value && game.description === 'A game ready for your next adventure.') game.description = record.description.value
     merged.set(key, game)
     rows += 1
   }

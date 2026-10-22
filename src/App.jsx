@@ -302,7 +302,7 @@ function App() {
                 <div className="swipe-hint left">← skip</div>
                 <div className="swipe-hint right">want to play →</div>
                 <article className={`game-card ${currentGame.color}`} style={cardStyle} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}>
-                  <div className="card-art"><span className="art-orb orb-one" /><span className="art-orb orb-two" /><span className="art-symbol">✦</span><span className="card-badge">{currentGame.badge}</span></div>
+                  <div className="card-art">{currentGame.image ? <img className="game-image" src={currentGame.image} alt="" /> : <><span className="art-orb orb-one" /><span className="art-orb orb-two" /><span className="art-symbol">✦</span></>}<span className="card-badge">{currentGame.badge}</span></div>
                   <div className="card-content">
                     <div className="card-meta"><span>{currentGame.genre}</span><span>·</span><span>{currentGame.hours}</span></div>
                     <h2>{currentGame.title}</h2>
@@ -321,7 +321,7 @@ function App() {
       ) : (
         <section className="library">
           <div className="library-heading"><div><p className="eyebrow">{activeTab === 'liked' ? 'YOUR SHORTLIST' : activeTab === 'played' ? 'YOUR HISTORY' : 'YOUR DECLINED GAMES'}</p><h2>{activeTab === 'liked' ? 'Want to play' : activeTab === 'played' ? 'Played games' : 'Declined'}</h2></div><span className="count-pill">{visibleLibrary.length} games</span></div>
-          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}><span>✦</span></div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><button className="undo" onClick={() => resetGame(game.id)} aria-label={`Move ${game.title} back to Discover`}>↺</button></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
+          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.image ? <img className="mini-image" src={game.image} alt="" /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><button className="undo" onClick={() => resetGame(game.id)} aria-label={`Move ${game.title} back to Discover`}>↺</button></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
         </section>
       )}
 

@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/sync-catalog.mjs
+        env:
+          SYNC_WIKIDATA: 'false'
       - name: Commit updated catalog
         run: |
           git config user.name "github-actions[bot]"

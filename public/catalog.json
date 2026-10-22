@@ -1,1 +1,4898 @@
-[]
+[
+  {
+    "id": "freetogame-540",
+    "title": "Overwatch",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A hero-focused first-person team shooter from Blizzard Entertainment.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/540/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-516",
+    "title": "PUBG: BATTLEGROUNDS",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/516/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-508",
+    "title": "Enlisted",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/508/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-644",
+    "title": "World of Tanks: HEAT",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play hero-based shooter set in the World of Tanks universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/644/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-642",
+    "title": "Neverness to Everness",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "Neverness to Everness is a gacha game that blends some GTA-style play with team-based combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/642/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-590",
+    "title": "Throne And Liberty",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play multi-platorm MMORPG from NCSoft and Amazon Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/590/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-523",
+    "title": "Fall Guys",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "Play the most competitive massively multiplayer party royale game featuring beans ever for free on a variety of platforms. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/523/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-340",
+    "title": "Game Of Thrones Winter Is Coming",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play browser-based RTS based on the George R.R. Martin novels and popular HBO series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/340/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-347",
+    "title": "Elvenar",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A browser based city-building strategy MMO set in the fantasy world of Elvenar.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/347/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-11",
+    "title": "Neverwinter",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 3D action MMORPG based on the acclaimed Dungeons & Dragons fantasy roleplaying game. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/11/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-517",
+    "title": "Lost Ark",
+    "genre": "ARPG",
+    "hours": "Free to play",
+    "description": "Smilegate’s free-to-play multiplayer ARPG is a massive adventure filled with lands waiting to be explored, people waiting to be met, and an ancient evil waiting to be destroyed.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/517/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-475",
+    "title": "Genshin Impact",
+    "genre": "Action RPG",
+    "hours": "Free to play",
+    "description": "If you’ve been looking for a game to scratch that open-world action RPG itch, one with perhaps a bit of Asian flair, then you’re going to want to check out miHoYo’s Genshin Impact.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/475/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-620",
+    "title": "Hero Wars: Dominion Era",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy MMORPG where players assemble teams of heroes to battle against powerful enemies.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/620/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-9",
+    "title": "World of Warships",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A 3D free to play naval action-themed MMO from the creators of World of Tanks! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/9/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-2",
+    "title": "World of Tanks",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "If you like blowing up tanks, with a quick and intense game style you will love this game!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/2/thumbnail2.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-645",
+    "title": "Crystal Saga Nova",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy MMORPG playable on browsers.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/645/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-628",
+    "title": "World of Sea Battle",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play historical open-sea MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/628/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-521",
+    "title": "Diablo Immortal",
+    "genre": "MMOARPG",
+    "hours": "Free to play",
+    "description": "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/521/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-511",
+    "title": "Phantasy Star Online 2 New Genesis",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "The legacy of Phantasy Star Online 2 continues a thousand years later!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/511/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-5",
+    "title": "Crossout",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A post-apocalyptic MMO vehicle combat game! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/5/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-12",
+    "title": "War Thunder",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A MMO shooter that puts you in command of hundreds of the finest combat vehicles of World War II.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/12/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-652",
+    "title": "Aion 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "The sequel to NC's original Aion featuring vertical exploration and combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/652/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-648",
+    "title": "Ragnarok: The New World",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An open-world entry in the Ragnarok IP.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/648/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-624",
+    "title": "Battlefield REDSEC",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play battle royale game built with Battlefield DNA.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/624/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-641",
+    "title": "Foundation: Galactic Frontier",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Isaac Asimov’s series brought to life in a massive real-time strategy RPG featuring crew management and galactic warfare.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/641/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-615",
+    "title": "Arena Breakout: Infinite",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play tactical extraction shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/615/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-599",
+    "title": "Marvel Rivals",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play superhero team shooter from NetEase.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/599/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-560",
+    "title": "Palia",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A cozy MMO with homebuilding and some adventure.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/560/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-458",
+    "title": "League of Angels - Heaven's Fury",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, browser-based fantasy online action RPG based loosely on Western mythology!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/458/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-345",
+    "title": "Forge of Empires",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 2D browser-based online strategy game, become the leader and raise your city.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/345/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-14",
+    "title": "Star Trek Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, 3D, Sci-Fi MMORPG based on the popular Star Trek series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/14/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-626",
+    "title": "Where Winds Meet",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world ARPG set in tenth-century China.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/626/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-595",
+    "title": "Brighter Shores",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A point-and-click MMORPG from RuneScape's creator, Andrew Gower.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/595/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-515",
+    "title": "Halo Infinite",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "For the first time ever, a free-to-play Halo experience is available in the form of Halo Infinite’s multiplayer.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/515/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-466",
+    "title": "Valorant",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Test your mettle in Riot Games’ character-based FPS shooter Valorant.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/466/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-467",
+    "title": "Phantasy Star Online 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Welcome to ARKS, and elite task force searching dangerous planets for the corrupted Falspawn in Phantasy Star 2 Online, Sega’s popular, free-to-play sci-fi MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/467/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-452",
+    "title": "Call of Duty: Warzone",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A standalone free-to-play battle royale and modes accessible via Call of Duty: Modern Warfare.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/452/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-21",
+    "title": "Destiny 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer Sci-Fi MMOFPS from Bungie.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/21/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-23",
+    "title": "Apex Legends",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play strategic battle royale game featuring 60-player matches and team-based play. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/23/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-57",
+    "title": "Fortnite",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play, standalone mode of Epic Game's Fortnite. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/57/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-6",
+    "title": "Blade and Soul",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play martial arts MMORPG that tasks players with learning combination attacks.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/6/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-212",
+    "title": "Brawlhalla",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D platform fighter inspired by the Smash Bros.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/212/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-8",
+    "title": "Trove",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play Sandbox massively multiplayer online role-playing game! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/8/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-13",
+    "title": "Guild Wars 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG, the follow-up to ArenaNet's popular Guild Wars. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/13/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-350",
+    "title": "Goodgame Empire",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play medieval strategy browser game. Build you own castle and create a powerful army! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/350/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-433",
+    "title": "RuneScape",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A popular 3D browser MMORPG boasting a huge player base and 15 years of content.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/433/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-339",
+    "title": "Tibia",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A old-school free-to-play massively multiplayer online \r\nrole-playing game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/339/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-636",
+    "title": "Arknights: Endfield",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play RTS RPG gacha game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/636/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-629",
+    "title": "Wuthering Waves",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "A free-to-play action RPG with gacha elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/629/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-556",
+    "title": "Naraka: Bladepoint",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "A free-to-play melee focused battle royale.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/556/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-605",
+    "title": "Honkai: Star Rail",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "A free-to-play sci-fantasy game from HoYoVerse",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/605/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-653",
+    "title": "SPAM",
+    "genre": "Card",
+    "hours": "Free to play",
+    "description": "A free-to-play turn-based competitive card game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/653/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-650",
+    "title": "Tyr",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play tank shooter with customizable skill trees.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/650/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-651",
+    "title": "Aniimo",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world creature taming game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/651/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-649",
+    "title": "Soul's Remnant",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An indie 2D Side Scroller MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/649/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-646",
+    "title": "Gloria Victis",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play low-fantasy medieval MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/646/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-647",
+    "title": "RF Online Next",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play sci-fi PvP MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/647/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-643",
+    "title": "The Division Resurgence",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world shooter set in The Division universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/643/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-639",
+    "title": "The Seven Deadly Sins: Origin",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "A free-to-play action RPG based on the manga and anime.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/639/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-635",
+    "title": "Heartopia",
+    "genre": "Social",
+    "hours": "Free to play",
+    "description": "A free-to-play life simulation game for multiple players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/635/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-631",
+    "title": "Reign of Guilds",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An open-world MMORPG inspired by old-school games like Ultima Online and EverQuest",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/631/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-621",
+    "title": "2XKO",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free-to-play 2v2 fighting game set in the League of Legends universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/621/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-622",
+    "title": "Blue Protocol: Star Resonance",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world anime MMORPG. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/622/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-623",
+    "title": "Raven2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/623/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-625",
+    "title": "Superball",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A free-to-play futuristic sports game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/625/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-616",
+    "title": "Warborne Above Ashes",
+    "genre": "MMO",
+    "hours": "Free to play",
+    "description": "A free-to-play PvP-centric MMO.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/616/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-617",
+    "title": "Eterspire",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, cross-platform MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/617/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-618",
+    "title": "skate.",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "The latest, free-to-play, entry in the Skate franchise.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/618/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-619",
+    "title": "Blade & Soul Heroes",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play collectible action MMORPG set in the Blade & Soul universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/619/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-632",
+    "title": "Dragon Ball Gekishin Squadra",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play MOBA featuring all your favorite Dragon Ball characters.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/632/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-613",
+    "title": "Dfiance",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play tactical card game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/613/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-614",
+    "title": "Dungeon Stalker",
+    "genre": "Dungeon Crawler",
+    "hours": "Free to play",
+    "description": "A free-to-play dungeon crawler with survival elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/614/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-611",
+    "title": "Mecha BREAK",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A team-based third-person shooter featuring mechs.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/611/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-612",
+    "title": "Terminull Brigade",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play third-person looter-shooter with customizable characters.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/612/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-633",
+    "title": "Umamusume: Pretty Derby",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A free-to-play gacha-style sports game featuring racing horse-girls.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/633/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-609",
+    "title": "Crystal Of Atlan",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A magicpunk MMORPG from Nuverse.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/609/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-610",
+    "title": "Splitgate: Arena Reloaded",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play shooter using portals.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/610/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-606",
+    "title": "Steel Hunters",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A post-apocalyptic extraction shooter with giant mechs.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/606/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-607",
+    "title": "The Lost Glitches",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A cyberpunk RPG trading card game from Honig Studios.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/607/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-608",
+    "title": "Odin: Valhalla Rising",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An open-world MMORPG based on Norse mythology.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/608/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-603",
+    "title": "War Robots: Frontiers",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A multiplayer mech game set in a planetary system light years from Earth.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/603/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-604",
+    "title": "FragPunk",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play 5v5 hero shooter that uses cards to modify matches.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/604/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-601",
+    "title": "Delta Force",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play team-based tactical shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/601/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-597",
+    "title": "Strinova",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A third-person tactical shooter that features the unique mechanic of allowing players to switch between three-dimensional and two-dimensional forms.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/597/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-598",
+    "title": "SUPERVIVE",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "Combine MOBAs, battle royales, and hero shooters into one fast paced game hand you have SUPERVIVE.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/598/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-592",
+    "title": "Starborne: Frontiers",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A tactical autobattler set 400 years in the future.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/592/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-593",
+    "title": "Return Alive",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play top-down tactical shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/593/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-587",
+    "title": "Spectre Divide",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A 3v3 tactical shooter developed and published by Mountaintop Studios in partnership with former pro gamer shroud,",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/587/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-588",
+    "title": "Vigor",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play looter shooter from the developers of Operation Flashpoint and the Arma series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/588/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-602",
+    "title": "Smite 2",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "The free-to-play Unreal Engine 5-powered sequel to the popular third-person MOBA",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/602/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-583",
+    "title": "The First Descendant",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play third-person co-op looter shooter developed and published by Nexon.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/583/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-584",
+    "title": "Once Human",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A post-apocalyptic open-world survival game from Starry Studio.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/584/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-586",
+    "title": "Stormgate",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play science fantasy real-time strategy game in which humans and robots defend Earth from alien forces.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/586/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-634",
+    "title": "Zenless Zone Zero",
+    "genre": "ARPG",
+    "hours": "Free to play",
+    "description": "A free-to-play gacha-style ARPG in a post-apocalyptic urban setting.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/634/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-591",
+    "title": "Battle Crush",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "An action brawler for up to 30 players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/591/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-580",
+    "title": "Screenplay CCG",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A collectible card game inspired by movie making.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/580/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-585",
+    "title": "SolForge Fusion",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A card-battling game in which each card levels up and becomes more powerful.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/585/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-589",
+    "title": "Sky: Children of the Light",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A cozy free-to-play MMORPG from thatgamecompany.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/589/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-640",
+    "title": "Project Entropy",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Project Entropy drops you into a living sci-fi MMO universe!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/640/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-578",
+    "title": "Predecessor",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play MOBA shooter developed and published by Omeda Studios.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/578/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-579",
+    "title": "Project Apidom",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play apocalyptic extraction RPG with MOBA-like combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/579/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-46",
+    "title": "RAID: Shadow Legends",
+    "genre": "RPG",
+    "hours": "Free to play",
+    "description": "RAID: Shadow Legends is a free-to-play turn-based fantasy RPG with hundreds of champions and several game modes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/46/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-572",
+    "title": "Ravendawn",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D top-down MMORPG featuring homesteading and building mechanics.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/572/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-575",
+    "title": "One Punch Man: World",
+    "genre": "Action Game",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer 3D action game from Crunchyroll Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/575/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-576",
+    "title": "Battle Teams 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A multiplayer tactical shooter with an Eastern aesthetic.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/576/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-570",
+    "title": "The Finals",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A game-show style PvP shooter from Embark Studios.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/570/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-571",
+    "title": "Infinite Borders",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play strategy game from NetEase set during China’s Three Kingdoms period.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/571/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-573",
+    "title": "Titan Revenge",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D Norse-themed browser MMORPG developed and published by Game Hollywood Games",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/573/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-569",
+    "title": "Destiny's Divide",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Free-to-play PvP Fantasy Card Game for competitive card game players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/569/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-568",
+    "title": "Warhammer 40,000: Warpforge",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play CCG set in the Warhammer 40K universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/568/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-567",
+    "title": "Microvolts: Recharged",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A lobby-based third-person shooter with a toy-theme.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/567/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-577",
+    "title": "Deceit 2",
+    "genre": "Action",
+    "hours": "Free to play",
+    "description": "A social deduction game from World Makers.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/577/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-630",
+    "title": "My Hero Ultra Rumble",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "A free-to-play 24-person battle royale based on My Hero Academia.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/630/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-558",
+    "title": "Hawked",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play PvPvE treasure hunting shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/558/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-559",
+    "title": "Tales Of Yore",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D MMORPG with lots of RPG tropes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/559/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-562",
+    "title": "Waven",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play online tactical RPG from Ankama.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/562/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-566",
+    "title": "Town of Salem 2",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A deduction game set in Salem.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/566/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-554",
+    "title": "Undawn",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world survival RPG developed by LightSpeed studios and published by Level Infinite.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/554/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-268",
+    "title": "Eden Eternal",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play fantasy MMORPG with cute anime-inspired graphics.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/268/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-551",
+    "title": "Veiled Experts",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer shooter game focused on the search and destroy mode of classic shooters.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/551/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-552",
+    "title": "Jected - Rivals",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A free-to-play game mixing extreme sports with destructible vehicles and a unique ejection mechanic.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/552/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-557",
+    "title": "Ethyrial: Echoes of Yore",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A old-school MMORPG set in a world on the brink of Civil War",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/557/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-594",
+    "title": "Stalcraft: X",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play MMOFPS set in an open-world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/594/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-545",
+    "title": "Fangs",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A 4v4 MOBA with hero-specific strategies.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/545/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-549",
+    "title": "Summoners War: Chronicles",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A multi-platform ARPG set in the Summoners War universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/549/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-541",
+    "title": "Marvel Snap",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A fast paced strategy card game set in the Marvel universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/541/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-542",
+    "title": "World Boss",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "An experimental FPS based on io and roguelike gameplay.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/542/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-536",
+    "title": "Omega Strikers",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A 3v3 socccer-style game with knockouts.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/536/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-537",
+    "title": "Gundam Evolution",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A 6v6 team-based shooter based on the Gundam multiverse",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/537/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-527",
+    "title": "Aero Tales Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Aero Tales Online: The World is a free-to-play 3D anime-style MMORPG with PvP and PvE elements. The game revolves around the “mysterious story of the Key of Skylight”.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/527/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-529",
+    "title": "Tower of Fantasy",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Tower of Fantasy is a 3D open-world RPG, anime-style sci-fi MMO RPG game with unique characters and beautiful open vistas!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/529/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-531",
+    "title": "Magic Spellslingers",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Magic Spellslingers is the latest entry based on Witzards of the Coast’s popular card game Magic: The Gathering.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/531/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-533",
+    "title": "A.V.A Global",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A.V.A is a free-to-play online first-person shooter with multiple game modes, unique customizations, as well as PvP and PvE gameplay.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/533/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-534",
+    "title": "Lost Light",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A post-apocalyptic shooter built around creating a realistic experience.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/534/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-524",
+    "title": "Temperia: Soul of Majestic",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Fans of collectible card games, are you looking for something a bit different from the normal fare? Then a peek at Moonwolf Entertainment and A2 Softworks’ Temperia: Soul of Majestic might be in order.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/524/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-522",
+    "title": "Flyff Universe",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Get the full Flyff experience on any platform with the free-to-play browser-based MMORPG Flyff Universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/522/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-532",
+    "title": "World of Runes",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An adorable anime-style MMO featuring cute pets and collectable cards.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/532/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-520",
+    "title": "Roller Champions",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "What if you could player roller derby, but in a more organized and less physically dangerous environment?",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/520/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-550",
+    "title": "Goose, Goose, DUCK",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A social deduction game with geese.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/550/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-627",
+    "title": "Super Animal Royale",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D battle royale  featuring hundreds of animals.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/627/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-513",
+    "title": "Super Squad",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "Prepare yourself. It’s time for Mayhem. Super Squad is a multi-player online shoot-’em-up (or MOSH)!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/513/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-512",
+    "title": "Sherwood Extreme",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "High action arcade shooter Sherwood Extreme sends players on a mission to save the kingdom!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/512/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-509",
+    "title": "Smash Legends",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "Classic fairy tales get wild with 5minlab and LINE Games Corporation’s brawl-action game Smash Legends.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/509/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-502",
+    "title": "Primordials: Battle of Gods",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Build armies and fight for control of the realm in Global Dodo Entertainment’s 1v1 strategy game Primordials: Battle of Gods. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/502/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-507",
+    "title": "Super Mecha Champions",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Super Mecha Champions is a PC port of the mobile anime PvP game from NetEease, featuring a variety of modes but focusing on battle royale.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/507/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-500",
+    "title": "Chroma: Bloom And Blight",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Competitive card game fans have a new, completely free option to add to their list. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/500/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-498",
+    "title": "Blankos Block Party",
+    "genre": "MMO",
+    "hours": "Free to play",
+    "description": "What happens when you take the vinyl collectible toy experience and combine it with an open-world multiplayer game? You get Blankos Block Party!\r\n",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/498/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-499",
+    "title": "Slapshot: Rebound",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "Do you like hockey? How about physic-based multiplayer, arcade-style sports games with cute graphics? Well, this is the one for you.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/499/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-476",
+    "title": "Rogue Company",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "From Hi-Rez Studios, the team that brought you Smite and Paladins, comes Rogue Company, a cross-platform, competitive team-based third person shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/476/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-477",
+    "title": "Eternal Return",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "Combining elements from battle royale, MOBA, and the survival genres, Eternal Return: Black Survival is a game designed with a broad audience in mind. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/477/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-479",
+    "title": "Blood of Steel",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Blood of Steel is an online competitive strategy game featuring some of the most well-known figures throughout medieval history. Choose your general – a Crusader, Viking, Ninja or one of those from the Three Kingdoms. Build your kingdom and command armies in epic PvP battles using classic medieval warfare tactics.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/479/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-473",
+    "title": "Spellbreak",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "Spellbreak is a multiplayer, multi-platform battle-royale where player take on the role of a “battlemage” mastering elemental magic and using spells to compete against other players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/473/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-474",
+    "title": "Rocket League",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "Get your car-soccer gaming on for free with Psyonix’s Rocket League. The popular competitive multi-player game is a popular offering with over 57 million players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/474/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-471",
+    "title": "Armor Valor",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Build your empire with the help of mythical heroes and well thought out strategy in R2 Games’ strategy RPG Armor Valor.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/471/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-469",
+    "title": "Unfortunate Spacemen",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Unfortunate Spacemen is a co-op multiplayer game about Shapeshifting with a Co-op Story Mode, lots of objectives and more!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/469/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-461",
+    "title": "Shop Titans",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play RPG shopkeeper simulation game where you are responsible for designing and maintaining your own shop.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/461/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-463",
+    "title": "Survivor Legacy",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Survivor Legacy is a free-to-play zombie-themed strategy game from R2 Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/463/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-459",
+    "title": "Bombergrounds: Battle Royale",
+    "genre": "Battle Royale",
+    "hours": "Free to play",
+    "description": "A free-to-play massively multiplayer battle Royale game inspired by the old-shool Bomberman games!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/459/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-563",
+    "title": "Kakale Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play top-down 2D MMORPG from developer and publisher ViVa Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/563/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-39",
+    "title": "Darwin Project",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play 10-player battle royale game set just prior to an impeding ice age.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/39/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-441",
+    "title": "Legends of Runeterra",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play CCG based on Riot Games' MOBA League of Legends.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/441/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-4",
+    "title": "CRSED: F.O.A.D.",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Take the battle royale genre and add  mystical powers and you have CRSED: F.O.A.D. (Aka Cuisine Royale: Second Edition)",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/4/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-535",
+    "title": "Mirage Online Classic",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A browser-based free-to-play spiritual successor to 2001's Mirage Online.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/535/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-436",
+    "title": "Inferna",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A cross-platform MMO from indie developer and publisher Inferna Limited, designed for players seeking a classic experience.  ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/436/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-443",
+    "title": "Ultimate Pirates",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A browser-based strategy MMO published for both desktop and mobile browsers by Gameforge.  ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/443/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-437",
+    "title": "Stay Out",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "An MMORPG featuring urban exploration and shooter elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/437/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-439",
+    "title": "PC Futbol Legends",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "An arcade soccer game inspired by cult arcade games from IDC games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/439/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-440",
+    "title": "Vampire Empire",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A multiplayer strategy game that focuses on the war between vampires and werewolves. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/440/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-468",
+    "title": "Firestone Idle RPG",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Set in the fantasy world of Alandria, Firestone is an idle RPG in which players are tasked with building the best possible party of heroes and using them to defeat the undead and orcs that plague the world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/468/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-505",
+    "title": "Mythgard",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Rhino Games Inc.’s CCG Mythgard combines cyberpunk with the heroes, gods, and creatures of the fantasy in a modern setting to create a world where magic competes against technology for control.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/505/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-451",
+    "title": "Crystal Clash",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy RTS developed by Crunchy Leaf Games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/451/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-447",
+    "title": "Dota Underlords",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play auto battler strategy game set in the world of Valve's Dota franchise.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/447/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-19",
+    "title": "Minion Masters",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play strategic minion brawler from Danish developer Betadwarf. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/19/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-20",
+    "title": "Splitgate",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer shooter developed and published by 1047 games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/20/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-455",
+    "title": "Eternal Fury",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play ARPG from R2 Games!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/455/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-456",
+    "title": "Conqueror's Blade",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Command your own medieval army in Conqueror's Blade, a war simulator developed by Booming games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/456/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-353",
+    "title": "Stein.world",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, browser-based online fantasy role \r\nplaying game done in an old-school \r\n16-bit style.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/353/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-438",
+    "title": "Kards",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play collectible World War II card game from developer 1939 Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/438/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-448",
+    "title": "KurtzPel",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free-to-play third-person action battle game from KOG Games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/448/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-457",
+    "title": "The Third Age",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play browser-based Strategy MMO game focused on story-based PvE gameplay!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/457/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-91",
+    "title": "Eternal",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A strategy card game designed to take the best elements of Magic the Gathering, Hearthstone, and Hex and combine them all into one game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/91/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-503",
+    "title": "Artifact",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Valve’s Artifact is two games in one. Whether you’re looking for the original Dota 2 trading card game created with the help of card game designer Richard Garfield or something a little more streamlined, Artifact has both in one download.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/503/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-538",
+    "title": "World War 3",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A realistic multiplayer tactical FPS.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/538/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-299",
+    "title": "Combat Arms: Reloaded",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play modern first person shooter with lots of maps and weapons!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/299/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-68",
+    "title": "Dreadnought",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play combat flight simulator developed by Yager Development and published by Grey Box. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/68/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-28",
+    "title": "Spacelords",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play 4v1 sci-fi shooter. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/28/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-450",
+    "title": "Battlerite Royale",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free to play battle royale set in the Battlerite universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/450/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-454",
+    "title": "Magic: The Gathering Arena",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play digital recreation of Wizards of the Coast's popular collectible card game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/454/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-341",
+    "title": "League of Angels 3",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play turn-based strategy browser game developed and published by GTArcade Entertainment, Inc.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/341/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-282",
+    "title": "BlackShot: Revolution",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Get thrown into the fast-paced action of a virtual war zone and compete against other players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/282/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-31",
+    "title": "Cosmos Invictus",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A strategic collectible card game developed and published by Pegnio Ltd. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/31/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-460",
+    "title": "Empire: World War 3",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play browser-based action packed strategy game from the developer of Legends of Honor.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/460/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-506",
+    "title": "Totally Accurate Battlegrounds",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Take 60 players, throw them on a map together with over 90 weapons, including balloon crossbows, pots and pans, and inflatable hammers, add physics-based parkour and you have Landfall’s Totally Accurate Battlegrounds (TABG).",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/506/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-434",
+    "title": "Will To Live",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG-shooter developed and published by AlphaSoft LLC.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/434/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-543",
+    "title": "Battle Arena Heroes Adventure",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A MOBA with RPG elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/543/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-42",
+    "title": "Spellsworn",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play arena battle game developed and published by Frogsong Studios AB. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/42/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-43",
+    "title": "Z1 Battle Royale",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A highly competitive free-to-play battle royale shooter.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/43/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-44",
+    "title": "Tale Of Toast",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play open world MMO inspired by classic, core MMOs. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/44/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-45",
+    "title": "SoulWorker",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play anime action MMO based on the popular anime of the same title. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/45/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-47",
+    "title": "Bombtag",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer Bomberman-inspired game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/47/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-49",
+    "title": "Dead Maze",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D isometric MMO full of zombies. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/49/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-316",
+    "title": "Scions of Fate",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A friendly free to play MMORPG with easy to pick up controls.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/316/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-22",
+    "title": "Wild Terra Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A medieval sandbox MMO designed with core players in mind. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/22/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-51",
+    "title": "Global Adventures",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG developed by PixelSoft and Published by SubaGames. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/51/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-52",
+    "title": "Closers",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play episodic anime beat-em-up developed \r\nby Naddic Games and published by \r\nEn Masse Entertainment. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/52/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-322",
+    "title": "La Tale Evolved",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D side-scrolling fantasy MMORPG with anime-inspired graphics.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/322/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-120",
+    "title": "Luna Online: Reborn",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, anime themed fantasy MMORPG and a remake of the previous Luna MMO! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/120/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-58",
+    "title": "The Ultimatest Battle",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D platform game that pits two teams of players against each other in a variety of modes. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/58/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-30",
+    "title": "Quake Champions",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Quake Champions is a callback to the early days of the Quake IP, featuring the fast-paced action that made the IP popular over two decades ago. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/30/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-354",
+    "title": "Gods Origin Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play browser-based RPG from VivaGames in which players take on the role of human summoners that call deities from the Astral Realm back in time. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/354/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-61",
+    "title": "Black Squad",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play military FPS developed by NS STUDIO and published by NEOWIZ.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/61/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-64",
+    "title": "Secret World Legends",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play reboot of The Secret World. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/64/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-449",
+    "title": "Albion Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play cross-platform sandbox MMO developed and published by Sandbox Interactive GmbH. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/449/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-65",
+    "title": "Pixel Worlds",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, side-scroller MMO sandbox game developed and published by Kukouri Mobile Entertainment. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/65/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-55",
+    "title": "Deceit",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer first-person shooter set \r\nin an asylum! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/55/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-66",
+    "title": "Gwent: The Witcher Card Game",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play card game based on CD Projekt Red's popular Witcher franchise. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/66/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-67",
+    "title": "Awesomenauts",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A 3v3 2D battle arena Developed by Ronimo games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/67/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-70",
+    "title": "Alien Swarm: Reactive Drop",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play top-down tactical co-op expansion on the Alien swarm game and Source SDK.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/70/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-71",
+    "title": "Catan Universe",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play strategy game based on the classic board and card games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/71/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-72",
+    "title": "Krosmaga",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play CCG/tower defense hybrid developed \r\nby Ankama Studio and published by \r\nAnkama Games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/72/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-355",
+    "title": "Chronicles of Eidola",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 3D Browser RPG from AMZGame.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/355/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-87",
+    "title": "MU Legend",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG developed by Webzen and the followup to MU Online. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/87/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-421",
+    "title": "Therian Saga",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A browser-based sandbox MMORPG with a complex crafting system.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/421/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-69",
+    "title": "Cabals: Card Blitz",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play game developed by Kyy Games and published by BISBOG SA. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/69/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-82",
+    "title": "Line of Sight",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Free FPS game described as \"Bioshock meets Call of Duty\"! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/82/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-343",
+    "title": "Dragon Awaken",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, browser-based fantasy RPG developed \r\nby Game Hollywood and published by \r\nProficient City.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/343/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-85",
+    "title": "Infestation: The New Z",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A re-work of the open world zombie shooter game Infestation: Survivor Stories (or as it was formerly known \"The War Z\").",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/85/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-92",
+    "title": "One Tower",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A unique 1v1 MOBA known as a \"micro-moba\" developed and published by SkyReacher following a successful Kickstarter. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/92/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-88",
+    "title": "Shadowverse",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play strategic CCG developed and published by Cygamesm the creators of Rage of Bahamut and Granblu Fantasy. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/88/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-89",
+    "title": "AdventureQuest 3D",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play cross-platform MMORPG from the creators of the original 2D RPG game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/89/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-93",
+    "title": "Riding Club Championships",
+    "genre": "Racing",
+    "hours": "Free to play",
+    "description": "An online competitive horse riding game inspired by traditional equestrian disciplines. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/93/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-94",
+    "title": "Battlerite",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play team arena brawler developed by Stunlock Studios. Players play as one of several available champions on teams in 2v2 or 3v3 matches. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/94/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-95",
+    "title": "Paladins",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play team-based shooter developed and published by Hi-Rez Games, the creators of SMITE. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/95/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-344",
+    "title": "Omega Zodiac",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A Greek and Norse mythology based free-to-play action MMO developed and published by Proficient City and Game Hollywood.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/344/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-106",
+    "title": "Riders of Icarus",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play action MMORPG featuring mounted, in-air combat. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/106/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-365",
+    "title": "Naruto Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMO based on the popular anime series and manga, developed \r\nby Bandai Namco Entertainment. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/365/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-108",
+    "title": "Zula",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play online FPS developed and published by IDC/Games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/108/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-109",
+    "title": "LuckCatchers",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play sandbox sim based on the novels of fantasy and steam-punk author A. Pehov.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/109/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-110",
+    "title": "UFO Online: Invasion",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play post-apocalyptic, turn-based tactical combat \r\nMMO developed by Bad Pixel. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/110/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-112",
+    "title": "Weapons Of Mythology",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D free-to-play fantasy MMORPG published by IDC/Games. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/112/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-116",
+    "title": "Tree of Savior",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A fantasy 3D MMORPG with a massive freedom of choice, cute looking characters and a distinct art style. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/116/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-118",
+    "title": "Starbreak",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A Roguelike MMORPG with MetroidVania-style platformer \r\ngameplay! Castlevania and Metroid fans will \r\nlove this game! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/118/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-119",
+    "title": "Fantasy Tales Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, retro MMO featuring puzzles, a rich crafting system and Randomly generated dungeons! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/119/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-370",
+    "title": "Dragon Blood",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play browser MMORPG from 101XP, you'll harness your unique power and the blood of dragons that flows through your veins! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/370/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-371",
+    "title": "League of Angels 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play browser MMORPG that captures all the beauty and elegance of its predecessor.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/371/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-117",
+    "title": "Astral Heroes",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play collectable card game from the creators of Astral Masters. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/117/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-124",
+    "title": "Holodrive",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D multiplayer shooter developed by BitCake Studio and published by Versus Evil in which players play as customizable robots or \"Dummys\". ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/124/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-304",
+    "title": "Cabal Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play fast-paced skill-based MMORPG in a stunning world!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/304/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-125",
+    "title": "Atom Universe",
+    "genre": "Social",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer online social Virtual World set in a theme park.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/125/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-128",
+    "title": "Spellweaver",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer online collectible card \r\ngame that requires deep strategic and \r\nthinking.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/128/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-374",
+    "title": "Clash of Avatars",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 3D browser MMORPG with powerful Avatars, 50 mounts, \r\nand several loyal pets.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/374/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-134",
+    "title": "War Trigger 3",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A MMO shooter with infantry, vehicle, and air combat across massive maps! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/134/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-136",
+    "title": "VEGA Conflict",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A Cross-Platform free to play 2D sci-fi strategy MMO.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/136/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-137",
+    "title": "Metal War Online: Retribution",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A high-speed multiplayer online concept car shooter game with racing elements!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/137/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-139",
+    "title": "Immortal Empire",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play multiplayer strategy RPG developed by Tactic Studios.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/139/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-222",
+    "title": "MechWarrior Online",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play PvP game that's a faithful adaptation of the popular MechWarrior strategy board games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/222/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-7",
+    "title": "Armored Warfare",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A modern team-based MMO tank game from Obsidian Entertainment.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/7/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-149",
+    "title": "America’s Army: Proving Grounds",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Take a first person shooter, have the game developed by the U.S. Army and you’ve got America’s Army.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/149/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-346",
+    "title": "One Piece Online 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, browser-based 2D MMORPG based on the immensely popular One Piece franchise.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/346/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-383",
+    "title": "Legends of Honor",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser based medieval fantasy 2D MMORTS.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/383/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-384",
+    "title": "Felspire",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D browser-based fantasy MMORPG with plenty of dungeons and world bosses to slay.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/384/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-152",
+    "title": "WARMODE",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A Free to play multiplayer online shooter. Sight in enemies to master Headshots, Double Kills and Triple Kills! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/152/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-154",
+    "title": "Sphere 3: Enchanted World",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A fantasy action MMORPG with a non-target combat system.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/154/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-157",
+    "title": "Fishing Planet",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A Free to play realistic online first-person multiplayer fishing simulator! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/157/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-386",
+    "title": "Aberoth",
+    "genre": " MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 8-bit MMORPG with retro graphics and MUD-like interface.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/386/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-159",
+    "title": "Codename CURE",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play 3D MMOFPS featuring cooperative play, and objective-based missions.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/159/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-163",
+    "title": "Card Hunter",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free online collectible card game which blends together role-playing, card play and tactical combat. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/163/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-104",
+    "title": "Fallout Shelter",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play simulation game based on Bethesda Game Studios' popular Fallout franchise. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/104/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-388",
+    "title": "Lord’s Road",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D browser-based fantasy MMORPG that features two playable classes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/388/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-167",
+    "title": "Salem",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, sandbox type MMO based on the times and trials of living.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/167/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-168",
+    "title": "Heroes of the Storm",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free to play MOBA developed by Blizzard Entertainment.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/168/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-169",
+    "title": "Dirty Bomb",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play first person shooter multiplayer game set in a post-apocalyptic London.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/169/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-357",
+    "title": "Vikings: War Of Clans",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play MMO strategy game developed and published by Plarium.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/357/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-391",
+    "title": "Star Trek: Alien Domain",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser based 2D strategy MMO set in the Stark Trek universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/391/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-175",
+    "title": "Survarium",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play post-apocalyptic online FPS game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/175/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-177",
+    "title": "Dungeon Fighter Online",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free to play arcade-style side-scrolling action game mixed with RPG elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/177/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-56",
+    "title": "Grimoire: Manastorm",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer FPS... with wizards. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/56/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-373",
+    "title": "StarColony",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play browser MMO strategy game that puts you in command of a rapidly growing city on a dangerous alien world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/373/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-179",
+    "title": "Transformice",
+    "genre": "Fantasy",
+    "hours": "Free to play",
+    "description": "A cute little free-to-play MMO platformer.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/179/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-180",
+    "title": "Gear Up",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Control your unique tank or robot in multiplayer arcade action!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/180/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-181",
+    "title": "8BitMMO",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play retro­-style 2D MMO and a giant construction sandbox! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/181/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-399",
+    "title": "Siegelord",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 2D medieval fantasy browser-based MMORTS.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/399/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-182",
+    "title": "Dungeon Defenders 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play cooperative 3D tower-defense game by Trendy Entertainment.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/182/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-184",
+    "title": "Blockade 3D",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play FPS in an editable procedural world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/184/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-185",
+    "title": "Eldevin",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A indie story-driven Free to Play MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/185/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-186",
+    "title": "Double Action",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play FPS with bullet time and stylish kills!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/186/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-187",
+    "title": "Pox Nora",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A multiplayer online game that combines a collectible card game with a turn-based strategy game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/187/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-188",
+    "title": "Counter-Strike Nexon",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "What's better than Counter-Strike? Counter-Strike with more modes and Zombies!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/188/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-189",
+    "title": "Uncharted Waters Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play adventure MMORPG set on the high seas! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/189/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-10",
+    "title": "ArcheAge",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, hybrid fantasy/sandbox MMORPG brought to you by Trion Worlds.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/10/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-404",
+    "title": "Tribal Wars 2",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "The sequel to the classic city-building strategy game Tribal Wars! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/404/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-192",
+    "title": "WAKFU",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D tactical turn-based fantasy MMORPG developed by Ankama Games, in conjunction with Square Enix.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/192/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-193",
+    "title": "Infinity Wars",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A MMO trading card game, Build up your decks and customize them with tons of factional cards! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/193/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-195",
+    "title": "Divine Souls",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A action-based MMORPG in a fantasy world with magic and technology. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/195/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-196",
+    "title": "Cubic Castles",
+    "genre": "MMO",
+    "hours": "Free to play",
+    "description": "A free to play 3D Platforming and a open world building game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/196/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-199",
+    "title": "Royal Quest",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play fantasy MMORPG game with unique PvPvE locations, PvP Arenas, Battlegrounds and Castle Sieges. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/199/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-348",
+    "title": "Bleach Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 2D browser based MMORPG based on Bleach, the popular manga and anime series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/348/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-204",
+    "title": "Unturned",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A independently developed free-to-play MMO survival \r\ngame! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/204/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-207",
+    "title": "Warface",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer online FPS from Crytek, makers of the Far Cry and Crysis series of games.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/207/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-209",
+    "title": "Freestyle2: Street Basketball",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A free to play MMO street basketball game. Team up with the best street ballers! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/209/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-210",
+    "title": "Fistful of Frags",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A first person shooter game set in the Wild West! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/210/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-211",
+    "title": "GunZ 2: The Second Duel",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer Third Person Shooter and follow up to the successful GunZ: The Duel. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/211/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-213",
+    "title": "Archeblade",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free-to-play PvP-based multiplayer action game based on a Korean Fantasy Novel.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/213/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-214",
+    "title": "Villagers and Heroes",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy sandbox 3D MMORPG that has plenty to offer gamers.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/214/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-409",
+    "title": "Sparta: War of Empires",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A 2D browser-based MMORTS in which players must exercise their city-management skills to construct and upgrade different structures and troops.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/409/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-217",
+    "title": "Smite",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A popular free-to-play 3D MOBA where you take on the role of an ancient god.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/217/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-239",
+    "title": "Dogs of War Online",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "Based on the famous miniature board game Confrontation!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/239/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-220",
+    "title": "Hearthstone: Heroes of Warcraft",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "Blizzard's free-to-play collectible card game that \r\ndraws its inspiration from World of Warcraft. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/220/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-221",
+    "title": "Lucent Heart",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play MMORPG with a match making system that helps players find their soulmates.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/221/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-376",
+    "title": "League of Angels",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 2D browser-based fantasy MMORPG with turn-based combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/376/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-206",
+    "title": "Aura Kingdom",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Aura Kingdom is a 3D free-to-play Anime MMORPG from the same great studio that brought us Eden Eterna.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/206/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-424",
+    "title": "Crystal Saga",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 2D browser-based MMORPG that allows players to explore the land of Vidalia.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/424/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-224",
+    "title": "World of Warplanes",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play flight combat MMO brought to you by Wargaming.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/224/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-225",
+    "title": "RIFT",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Trion Worlds’ flagship fantasy massively multiplayer online role-playing game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/225/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-226",
+    "title": "Path of Exile",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play massively multiplayer online ARPG in the style of Diablo.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/226/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-411",
+    "title": "Soldiers Inc.",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 2D top-down browser based MMORTS game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/411/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-412",
+    "title": "Nords: Heroes of the North",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser-based 2D strategy MMO game with Elves, Orcs, Dragons and more.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/412/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-229",
+    "title": "Dota 2",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "Valve's premiere competitive free to play MOBA.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/229/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-230",
+    "title": "Ragnarok Online 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D fantasy MMORPG, and sequel to the popular Ragnarok Online.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/230/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-231",
+    "title": "Panzar",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play multiplayer third-person shooter with \r\nrpg elements and CryEngine 3 powered \r\ngraphics.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/231/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-233",
+    "title": "Kingdom Wars",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 3D MMORTS with real-time siege combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/233/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-3",
+    "title": "Warframe",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A cooperative free-to-play third person online action shooter set in an stunning sci-fi world. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/3/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-234",
+    "title": "Champions of Regnum",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play, realm versus realm fantasy MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/234/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-235",
+    "title": "Star Conflict",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play action-packed MMO space simulation game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/235/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-414",
+    "title": "Rail Nation",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 2D browser-based train simulation strategy MMO game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/414/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-240",
+    "title": "Epic Cards Battle",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free to play online strategic trading card game with dozens of cards and five factions. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/240/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-232",
+    "title": "Age of Wushu",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play martial arts action MMORPG with a large open world and sandbox-like features.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/232/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-241",
+    "title": "Everquest",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A fantasy MMORPG nearly two decades in the making. In fact, it’s the game that started it all! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/241/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-242",
+    "title": "Mabinogi",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play adventure MMORPG where you can create a unique character and live your fantasy life.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/242/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-415",
+    "title": "Stormfall: Age of War",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play 2D top-down browser MMORTS featuring castle building, resource management and PvP battles.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/415/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-243",
+    "title": "PlanetSide 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play open-world FPS that pits three factions against each other in a never-ending war.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/243/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-244",
+    "title": "AirMech",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play Action RTS with MOBA elements.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/244/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-349",
+    "title": "Big Farm",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A friendly browser-based farming simulation MMO game!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/349/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-416",
+    "title": "Wartune",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D browser-based Strategy MMORPG with classic turn based RPG features.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/416/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-246",
+    "title": "Pirate 101",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play Pirate-themed MMORPG designed with kids in mind.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/246/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-417",
+    "title": "Dino Storm",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 3D MMO with cowboys, dinosaurs, and laser guns.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/417/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-418",
+    "title": "The Settlers Online",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play city building MMORTS based on the popular Settlers series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/418/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-248",
+    "title": "Continent of the Ninth Seal",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free MMORPG where players take part as heroes of Glenheim to stand together against Nefer.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/248/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-24",
+    "title": "Counter-Strike 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "The popular multiplayer shooter from Valve.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/24/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-249",
+    "title": "RPG MO",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A nostalgic free MMORPG reminiscent of old-school RPG's like Ultima and Runescape.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/249/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-256",
+    "title": "Realm of the Mad God",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A fast paced 2d free to play MMO shooter game with a retro 8-bit style.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/256/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-422",
+    "title": "Pirates: Tides of Fortune",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser-based 2D MMORTS for people who are fans of pirates!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/422/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-255",
+    "title": "Stronghold Kingdoms",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A strategy based building/warfare game based on the long running Strongholds PC game series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/255/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-257",
+    "title": "Star Wars: The Old Republic",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D sci-fi MMORPG based on the popular Star Wars universe and brought to you by Bioware. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/257/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-261",
+    "title": "No More Room in Hell",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play cooperative FPS survival horror mod for the Source Engine.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/261/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-262",
+    "title": "Digimon Masters Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 3D MMORPG based on the popular Digimon franchise.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/262/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-264",
+    "title": "Dragon Nest",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play action MMORPG with non-targeting combat.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/264/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-427",
+    "title": "Drakensang Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play browser-based top-down hack-and-slash 3D MMORPG similar to games in the Diablo series.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/427/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-269",
+    "title": "Spiral Knights",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A massively multiplayer online role-playing game, battle monsters and collect treasures!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/269/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-423",
+    "title": "Steel Legions",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play 3d browser based tank game with fast-paced tactical battles! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/423/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-271",
+    "title": "Asda Global",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D anime-inspired fantasy MMORPG and is the successor to the original Asda Story.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/271/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-60",
+    "title": "Brink",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free-to-play first-person-shoot developed by Splash \r\nDamage and published by Bethesda Softworks. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/60/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-272",
+    "title": "Allods Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A fantasy MMORPG that follows more traditional “World of Warcraft-like” MMO traditions.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/272/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-205",
+    "title": "Elsword",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A Free to Play 3D side scrolling action MMORPG with many heroes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/205/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-260",
+    "title": "DC Universe Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play, comics based MMORPG set in the popular DC Comics universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/260/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-273",
+    "title": "Bloodline Champions",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "Free-to-Play Moba game where players engage in short battles of up to ten players divided into two teams.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/273/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-274",
+    "title": "GetAmped 2",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free to play fighting MMO, experience frantic battles up to 20 players.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/274/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-275",
+    "title": "Dragon Saga",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play arcade­-style side­-scrolling 3D MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/275/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-276",
+    "title": "Vindictus",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play action MMO game with beautiful graphics and intense battles.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/276/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-277",
+    "title": "Aika Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG with large scale PvP battles.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/277/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-258",
+    "title": "APB Reloaded",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play 3D MMO third person shooter game brought to you by GTA creator.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/258/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-278",
+    "title": "Mortal Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A unique free to play First Person sandbox MMORPG.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/278/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-281",
+    "title": "Grand Fantasia",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play anime inspired 3D MMORPG with customizable characters and \r\ncompanions.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/281/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-425",
+    "title": "Grepolis",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser-based strategy MMORTS set in Ancient Greece.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/425/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-286",
+    "title": "League of Legends",
+    "genre": "MOBA",
+    "hours": "Free to play",
+    "description": "A free-to-play MOBA game, and one of the most played pc game in the world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/286/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-287",
+    "title": "Twelve Sky 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "There’s a lot of world to explore in this fantasy MMORPG!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/287/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-288",
+    "title": "Champions Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A superhero MMORPG created by the same studio behind City of Heroes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/288/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-280",
+    "title": "WolfTeam",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play MMOFPS with a twist.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/280/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-290",
+    "title": "Runes of Magic",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy 3D MMORPG set in the fantasy world of Taborea.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/290/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-291",
+    "title": "theHunter",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "An MMO shooter where players can hunt 22 different animals in various locations.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/291/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-254",
+    "title": "AION",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A high fantasy, free-to-play MMORPG that centers on the war between the game’s two factions: The Asmodians and the Elyos.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/254/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-293",
+    "title": "Atlantica Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 3D tactical massively multiplayer online role-playing game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/293/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-295",
+    "title": "Florensia",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play fantasy MMORPG with legendary worlds ashore and at \r\nsea.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/295/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-306",
+    "title": "4Story",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A enjoyable MMORPG where you can customize your character, join guilds and battle other factions.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/306/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-426",
+    "title": "AdventureQuest Worlds",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play 2D fantasy browser MMORPG. There are no downloads or software to install! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/426/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-296",
+    "title": "S4 league",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play MMO Shooter with fluid gameplay and acrobatic moves!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/296/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-297",
+    "title": "Wizard101",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play MMORPG set in the magical Wizard school.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/297/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-298",
+    "title": "Perfect World International",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play fantasy MMORPG, that focuses heavily on Chinese mythology.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/298/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-319",
+    "title": "Ace Online",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play fast action 3D sci-fi MMO where players control space fighters jets.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/319/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-300",
+    "title": "Rohan: Blood Feud",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play medieval MMORPG highly-focused on PVP.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/300/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-301",
+    "title": "Age of Conan: Unchained",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A award ­winning massively multiplayer online game that has received critical acclaim.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/301/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-428",
+    "title": "Ikariam",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free to play browser-based city-building strategy game by GameForge.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/428/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-305",
+    "title": "Fiesta Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play anime MMORPG with a friendly community.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/305/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-308",
+    "title": "Angels Online Global",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A cute anime MMORPG with a good selection of classes.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/308/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-309",
+    "title": "Seal Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free MMORP that has been out for a long period of time with solid history under its belt.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/309/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-310",
+    "title": "Team Fortress 2",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "Valve's iconic class-based free-to-play first-person shooter!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/310/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-311",
+    "title": "Rumble Fighter",
+    "genre": "Fighting",
+    "hours": "Free to play",
+    "description": "A free to play Fighting MMO, test your skills!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/311/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-312",
+    "title": "Granado Espada Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "Adventure back to colonial times where you can find prestige, wealth, adventure, and a lot of work.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/312/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-265",
+    "title": "9Dragons",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A martial arts themed MMORPG set in China during the Ming Dynasty.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/265/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-15",
+    "title": "Crossfire",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A first person tactical shooter with a huge selection of game modes!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/15/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-313",
+    "title": "Teeworlds",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A free to play retro multiplayer online shooter where you can even design your own maps!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/313/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-337",
+    "title": "Priston Tale",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play action-oriented fantasy MMORPG!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/337/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-16",
+    "title": "Roblox",
+    "genre": "MMO",
+    "hours": "Free to play",
+    "description": "A free to play sandbox MMO with lots of creation options.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/16/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-333",
+    "title": "Metin2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A classic free to play 3D MMORPG with a retro feel.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/333/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-380",
+    "title": "Dark Orbit Reloaded",
+    "genre": "Shooter",
+    "hours": "Free to play",
+    "description": "A browser-based 3D space-combat MMO with a massive playerbase!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/380/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-317",
+    "title": "Rappelz",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 3D classic MMORPG with robust features.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/317/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-351",
+    "title": "Grand Prix Racing Online",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A free-to-play web-based motorsport management game.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/351/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-429",
+    "title": "Astro Empires",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A text-based sci-fi strategy and diplomacy MMO Game in a persistent universe.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/429/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-320",
+    "title": "Dungeons and Dragons Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play MMORPG based on the beloved D&D RPG that started it all.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/320/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-430",
+    "title": "Urban Rivals",
+    "genre": "Card Game",
+    "hours": "Free to play",
+    "description": "A free to play browser based card-game with a high player base and comic-book inspired world!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/430/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-323",
+    "title": "Flyff: Fly For Fun",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free-to-play anime MMORPG with charming visual aesthetic and an addictive gameplay.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/323/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-324",
+    "title": "Dream of Mirror Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play fantasy MMORPG with tons of social features.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/324/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-431",
+    "title": "Imperia Online",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A 2D free-to-play browser-based Medieval MMORTS, Train soldiers and raise an Empire.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/431/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-325",
+    "title": "MapleStory",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A popular free-to-play 2D side-scrolling MMORPG with tons of quests, and a huge game world!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/325/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-326",
+    "title": "Shot Online",
+    "genre": "Sports",
+    "hours": "Free to play",
+    "description": "A free to play Golfing MMO that any golf lover will enjoy to play!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/326/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-327",
+    "title": "Everquest 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 3D fantasy MMORPG and the sequel to EverQuest.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/327/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-328",
+    "title": "Dofus",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 2D MMORPG with tons of different classes and a tactical combat system.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/328/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-352",
+    "title": "Travian",
+    "genre": "Strategy",
+    "hours": "Free to play",
+    "description": "A popular browser-based multiplayer online strategy \r\ngame.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/352/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-190",
+    "title": "Ryzom",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "An MMORPG where players are immersed in a massive sandbox world.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/190/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-329",
+    "title": "Kal Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A Korean Fantasy MMORPG developed by Inixsoft.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/329/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-330",
+    "title": "Lineage 2",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D fantasy MMORPG with a strong emphasis on PvP.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/330/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-332",
+    "title": "Red Stone Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play 2D old school isometric MMORPG similar to Diablo.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/332/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-334",
+    "title": "Mu Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play Dungeon Crawler game like Diablo!",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/334/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-18",
+    "title": "Second Life",
+    "genre": "Social",
+    "hours": "Free to play",
+    "description": "A free to play 3D online virtual world with a huge reputation! ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/18/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-335",
+    "title": "Ragnarok Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A popular fantasy MMORPG, back to the golden age of MMORPGs.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/335/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-17",
+    "title": "Entropia Universe",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A 3D MMO Multi Virtual World Real Cash Economy Experience with RPG elements. ",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/17/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-432",
+    "title": "Habbo",
+    "genre": "Social",
+    "hours": "Free to play",
+    "description": "One of the largest and most popular Social MMO.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/432/thumbnail.jpg",
+    "platforms": []
+  },
+  {
+    "id": "freetogame-336",
+    "title": "Anarchy Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play Sci-Fi MMO that has withstood the test of time.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/336/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  },
+  {
+    "id": "freetogame-251",
+    "title": "The Lord of the Rings Online",
+    "genre": "MMORPG",
+    "hours": "Free to play",
+    "description": "A free to play MMORPG set in the world of J.R.R. Tolkien's \r\nclassic fantasy saga.",
+    "badge": "Free to play",
+    "image": "https://www.freetogame.com/g/251/thumbnail.jpg",
+    "platforms": [
+      "PC"
+    ]
+  }
+]
