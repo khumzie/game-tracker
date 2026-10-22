@@ -1,4 +1,4 @@
-const CACHE = 'gameflow-app-v3'
+const CACHE = 'gameflow-app-v4'
 const IMAGE_CACHE = 'gameflow-artwork-v1'
 
 self.addEventListener('install', (event) => {
@@ -40,7 +40,9 @@ self.addEventListener('fetch', (event) => {
   }
 
   const requestUrl = new URL(event.request.url)
-  const isFreshRequest = event.request.mode === 'navigate' || requestUrl.pathname.includes('/catalog/')
+  const isFreshRequest = event.request.mode === 'navigate'
+    || requestUrl.pathname.endsWith('/manifest.webmanifest')
+    || requestUrl.pathname.includes('/catalog/')
   if (isFreshRequest) {
     event.respondWith(
       fetch(event.request)
