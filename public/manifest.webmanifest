@@ -3,20 +3,20 @@
   "name": "gameflow",
   "short_name": "gameflow",
   "description": "A fast, personal game tracker.",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/game-tracker/",
+  "scope": "/game-tracker/",
   "display": "standalone",
   "background_color": "#171614",
   "theme_color": "#171614",
   "icons": [
     {
-      "src": "./designer.png",
+      "src": "/game-tracker/designer.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./designer.png",
+      "src": "/game-tracker/designer.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
