@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, rm, writeFile } from 'node:fs/promises'
 
 const clientId = process.env.TWITCH_CLIENT_ID
 const clientSecret = process.env.TWITCH_CLIENT_SECRET
@@ -85,6 +85,16 @@ for (const item of source) {
   })
 }
 
-await mkdir('public', { recursive: true })
-await writeFile('public/catalog.json', `${JSON.stringify([...merged.values()], null, 2)}\n`)
-console.log(`IGDB sync complete: ${merged.size} unique games from ${source.length} matching records.`)
+await mkdir('public/catalog', { recursive: true })
+for (const file of await readdir('public/catalog')) await rm(`public/catalog/${file}`)
+await rm('public/catalog.json', { force: true })
+const catalog = [...merged.values()]
+const chunkSize = 10000
+const chunks = []
+for (let index = 0; index < catalog.length; index += chunkSize) {
+  const filename = `chunk-${String(index / chunkSize).padStart(4, '0')}.json`
+  await writeFile(`public/catalog/${filename}`, `${JSON.stringify(catalog.slice(index, index + chunkSize))}\n`)
+  chunks.push(filename)
+}
+await writeFile('public/catalog/index.json', `${JSON.stringify({ version: new Date().toISOString(), count: catalog.length, chunks })}\n`)
+console.log(`IGDB sync complete: ${merged.size} unique games from ${source.length} matching records in ${chunks.length} catalog chunks.`)

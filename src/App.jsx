@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const STORAGE_KEY = 'gameflow-decisions'
-const CATALOG_KEY = 'gameflow-catalog'
 const OFFSET_KEY = 'gameflow-wikidata-offset'
 const SYNC_DONE_KEY = 'gameflow-wikidata-complete'
 
@@ -97,7 +96,7 @@ const fetchWikidataBatch = async (offset, signal) => {
 
 function App() {
   const [catalog, setCatalog] = useState(() => {
-    try { return mergeGames(games, JSON.parse(localStorage.getItem(CATALOG_KEY)) || []) } catch { return games }
+    return games
   })
   const [decisions, setDecisions] = useState(() => {
     try {
@@ -119,11 +118,32 @@ function App() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(decisions))
   }, [decisions])
   useEffect(() => {
-    localStorage.setItem(CATALOG_KEY, JSON.stringify(catalog))
-  }, [catalog])
-  useEffect(() => {
     localStorage.setItem(OFFSET_KEY, String(importOffset))
   }, [importOffset])
+
+  useEffect(() => {
+    let cancelled = false
+    const loadPublishedCatalog = async () => {
+      try {
+        const root = import.meta.env.BASE_URL
+        const indexResponse = await fetch(`${root}catalog/index.json`, { cache: 'no-store' })
+        if (!indexResponse.ok) throw new Error(`Catalog index returned ${indexResponse.status}`)
+        const index = await indexResponse.json()
+        const chunks = await Promise.all(index.chunks.map((chunk) => fetch(`${root}catalog/${chunk}`, { cache: 'no-store' }).then((response) => {
+          if (!response.ok) throw new Error(`Catalog chunk returned ${response.status}`)
+          return response.json()
+        })))
+        if (!cancelled) {
+          setCatalog((current) => mergeGames(current, chunks.flat()))
+          setImportStatus(`Loaded ${index.count.toLocaleString()} games from the latest catalog.`)
+        }
+      } catch (error) {
+        if (!cancelled) setImportStatus(`Catalog update unavailable: ${error.message}`)
+      }
+    }
+    loadPublishedCatalog()
+    return () => { cancelled = true }
+  }, [])
 
   const currentGames = useMemo(() => {
     const undecided = catalog.filter((game) => !decisions[game.id])
@@ -207,25 +227,6 @@ function App() {
       setIsImporting(false)
     }
   }
-
-  useEffect(() => {
-    let cancelled = false
-    fetch(`${import.meta.env.BASE_URL}catalog.json`, { cache: 'no-store' })
-      .then((response) => {
-        if (!response.ok) throw new Error(`Published catalog returned ${response.status}`)
-        return response.json()
-      })
-      .then((publishedGames) => {
-        if (!cancelled && Array.isArray(publishedGames) && publishedGames.length) {
-          addImportedGames(publishedGames)
-          setImportStatus(`Loaded ${publishedGames.length.toLocaleString()} games from the latest published catalog.`)
-        }
-      })
-      .catch(() => {
-        if (!cancelled) setImportStatus('Published catalog is not available yet; automatic source sync will continue.')
-      })
-    return () => { cancelled = true }
-  }, [])
 
   const decide = (decision) => {
     if (!currentGame) return
