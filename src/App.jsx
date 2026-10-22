@@ -311,7 +311,7 @@ function App() {
                   <div className="card-content">
                     <div className="card-meta"><span>{currentGame.genre}</span><span>·</span><span>{currentGame.hours}</span></div>
                     <h2>{currentGame.title}</h2>
-                    <p>{currentGame.description}</p>
+                    <p className="card-description">{currentGame.description}</p>
                     <div className="platforms">{currentGame.platforms.map((platform) => <span key={platform} title={platform}>{platformIcons[platform]} {platform}</span>)}</div>
                   </div>
                 </article>
