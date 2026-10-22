@@ -24,7 +24,7 @@ The complete catalog sync uses IGDB through a free Twitch developer application.
 5. Create `TWITCH_CLIENT_SECRET` and paste your client secret
 6. Run **Actions → Sync game catalog → Run workflow**
 
-The credentials are only available to the server-side GitHub Action. They are not bundled into the PWA, catalog, or browser. The workflow imports PC, Xbox One/Series, PlayStation 4/5, and Switch games, merges cross-platform duplicates, and retains artwork and descriptions. The scheduled job keeps the catalog updated, and each catalog commit automatically redeploys the PWA.
+The credentials are only available to the server-side GitHub Action. They are not bundled into the PWA, catalog, or browser. The workflow uses ID-cursor pagination rather than an offset or 10,000-row cap, so it keeps requesting records until IGDB has no more matches. It imports PC, Xbox One/Series, PlayStation 4/5, and Switch games, plus expansions, remakes, remasters, and definitive/expanded editions. It excludes standalone DLC/add-ons, costume/skin packs, bundles, mods, episodes, ports, and updates. Cross-platform duplicates are merged and artwork/descriptions retained. The scheduled job keeps the catalog updated, and each catalog commit automatically redeploys the PWA.
 
 ## Importing a large catalog
 

@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, writeFile } from 'node:fs/promises'
 
 const clientId = process.env.TWITCH_CLIENT_ID
 const clientSecret = process.env.TWITCH_CLIENT_SECRET
@@ -12,10 +12,12 @@ const tokenResponse = await fetch('https://id.twitch.tv/oauth2/token', {
 if (!tokenResponse.ok) throw new Error(`Twitch authentication failed: ${tokenResponse.status}`)
 const { access_token: accessToken } = await tokenResponse.json()
 
-const fetchPage = async (offset) => {
+const fetchPage = async (lastId) => {
   const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date;
-  where platforms.id = (6,48,49,130,167,169,170,39) & version_parent = null;
-  sort first_release_date desc; limit 500; offset ${offset};`
+  where platforms.id = (3,6,14,48,49,130,167,169)
+    & category = (0,2,4,8,9,10)
+    & id > ${lastId};
+  sort id asc; limit 500;`
   const response = await fetch('https://api.igdb.com/v4/games', {
     method: 'POST',
     headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
@@ -25,10 +27,12 @@ const fetchPage = async (offset) => {
   return response.json()
 }
 const source = []
-for (let offset = 0; offset < 10000; offset += 500) {
-  const page = await fetchPage(offset)
+let lastId = 0
+while (true) {
+  const page = await fetchPage(lastId)
   source.push(...page)
   if (page.length < 500) break
+  lastId = page[page.length - 1].id
 }
 
 const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
@@ -40,10 +44,10 @@ const mapPlatform = (name) => {
   if (value.includes('switch')) return 'Switch'
   return null
 }
-const existing = JSON.parse(await readFile('public/catalog.json', 'utf8').catch(() => '[]'))
 const merged = new Map()
-for (const game of [...existing, ...source.map((item, index) => ({
-  id: `igdb-${item.id || index}`,
+for (const item of source) {
+  const game = {
+  id: `igdb-${item.id}`,
   title: item.name,
   genre: item.genres?.[0]?.name || 'Game',
   hours: 'Unknown length',
@@ -51,7 +55,7 @@ for (const game of [...existing, ...source.map((item, index) => ({
   badge: 'IGDB catalog',
   image: item.cover?.url ? `https:${item.cover.url.replace('t_thumb', 't_cover_big')}` : '',
   platforms: item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || [],
-}))]) {
+  }
   if (!game.title) continue
   const key = normalizeTitle(game.title)
   const previous = merged.get(key)
