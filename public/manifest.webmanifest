@@ -1,22 +1,22 @@
 {
-  "id": "/game-tracker/",
+  "id": "https://khumzie.github.io/game-tracker/",
   "name": "gameflow",
   "short_name": "gameflow",
   "description": "A fast, personal game tracker.",
-  "start_url": "/game-tracker/",
-  "scope": "/game-tracker/",
+  "start_url": "https://khumzie.github.io/game-tracker/",
+  "scope": "https://khumzie.github.io/game-tracker/",
   "display": "standalone",
   "background_color": "#171614",
   "theme_color": "#171614",
   "icons": [
     {
-      "src": "/game-tracker/designer.png",
+      "src": "https://khumzie.github.io/game-tracker/designer.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/game-tracker/designer.png",
+      "src": "https://khumzie.github.io/game-tracker/designer.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
