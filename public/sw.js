@@ -1,5 +1,6 @@
 const CACHE = 'gameflow-app-v3'
 const IMAGE_CACHE = 'gameflow-artwork-v1'
+const STATIC_ASSET_EXTENSIONS = /\.(?:css|js|mjs|json|webmanifest|ico|png|jpg|jpeg|svg|webp|woff2?)$/i
 
 self.addEventListener('install', (event) => {
   const root = new URL('./', self.registration.scope)
@@ -24,6 +25,8 @@ self.addEventListener('activate', (event) => {
 })
 
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return
+
   if (event.request.destination === 'image') {
     event.respondWith(caches.open(IMAGE_CACHE).then(async (cache) => {
       const cached = await cache.match(event.request)
@@ -40,6 +43,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   const requestUrl = new URL(event.request.url)
+  const isSameOrigin = requestUrl.origin === self.location.origin
   const isFreshRequest = event.request.mode === 'navigate' || requestUrl.pathname.includes('/catalog/')
   if (isFreshRequest) {
     event.respondWith(
@@ -56,5 +60,18 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)))
+  const isStaticAsset = STATIC_ASSET_EXTENSIONS.test(requestUrl.pathname)
+
+  event.respondWith(
+    caches.match(event.request).then((cached) => {
+      if (cached) return cached
+      return fetch(event.request).then((response) => {
+        if (isSameOrigin && isStaticAsset && response.ok) {
+          const responseCopy = response.clone()
+          caches.open(CACHE).then((cache) => cache.put(event.request, responseCopy))
+        }
+        return response
+      })
+    }),
+  )
 })
