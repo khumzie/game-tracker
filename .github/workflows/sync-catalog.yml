@@ -16,9 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/sync-catalog.mjs
+      - run: node scripts/sync-igdb.mjs
         env:
-          SYNC_WIKIDATA: 'false'
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
       - name: Commit updated catalog
         run: |
           git config user.name "github-actions[bot]"

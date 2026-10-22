@@ -11,7 +11,20 @@ gameflow is a mobile-first game tracker PWA. Discover games with a quick swipe:
 
 The catalog starts with a small built-in set, then grows through the **Import** control. The primary import uses Wikidata's public, no-account-needed query service. Its default scope is PC plus Xbox One/Series, PlayStation 4/5, and Nintendo Switch; Wii, DS, and older console-only games are excluded. The repository includes a GitHub Actions workflow that runs the exhaustive free catalog sync daily and can also be started manually. It writes a published `public/catalog.json` file, which the PWA loads automatically on startup. This means the crawl runs on GitHub's server even when the phone app is closed; the app only needs to open later to receive the latest catalog. The workflow scans in reliable 100-row batches with retries until Wikidata has no more matching rows, then deduplicates by title and combines platforms. You can also upload a JSON/CSV export or optionally connect a RAWG API key. Imported games are normalized to one canonical record per title and combine available platforms, so cross-platform games never appear as duplicates.
 
-For GitHub Pages, set the repository's Pages source to **GitHub Actions** and enable **Read and write permissions** for Actions under repository settings. The included deployment workflow publishes the PWA on pushes to `main`; run **Sync game catalog** once from the Actions tab to create the first large catalog. The scheduled job will keep the catalog updated daily, and each catalog commit automatically redeploys the PWA.
+For GitHub Pages, set the repository's Pages source to **GitHub Actions** and enable **Read and write permissions** for Actions under repository settings. The included deployment workflow publishes the PWA on pushes to `main`.
+
+### Store free IGDB credentials
+
+The complete catalog sync uses IGDB through a free Twitch developer application. Add the credentials here:
+
+1. Open the repository: https://github.com/khumzie/game-tracker
+2. Go to **Settings → Secrets and variables → Actions**
+3. Select **New repository secret**
+4. Create `TWITCH_CLIENT_ID` and paste your client ID
+5. Create `TWITCH_CLIENT_SECRET` and paste your client secret
+6. Run **Actions → Sync game catalog → Run workflow**
+
+The credentials are only available to the server-side GitHub Action. They are not bundled into the PWA, catalog, or browser. The workflow imports PC, Xbox One/Series, PlayStation 4/5, and Switch games, merges cross-platform duplicates, and retains artwork and descriptions. The scheduled job keeps the catalog updated, and each catalog commit automatically redeploys the PWA.
 
 ## Importing a large catalog
 
