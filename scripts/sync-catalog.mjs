@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 
 const endpoint = 'https://query.wikidata.org/sparql'
-const batchSize = 500
+const batchSize = 100
 const maxBatches = 1000
 const platformPattern = 'PC|Windows|Linux|Mac|Xbox One|Xbox Series|PlayStation 4|PlayStation 5|PS4|PS5|Nintendo Switch'
 
@@ -24,11 +24,16 @@ const queryBatch = async (offset) => {
     FILTER(REGEX(?platformLabel, "${platformPattern}", "i"))
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
   } ORDER BY ?game LIMIT ${batchSize} OFFSET ${offset}`
-  const response = await fetch(`${endpoint}?query=${encodeURIComponent(query)}&format=json`, {
-    headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'gameflow-catalog-sync/1.0' },
-  })
-  if (!response.ok) throw new Error(`Wikidata returned ${response.status}`)
-  return response.json()
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    const response = await fetch(`${endpoint}?query=${encodeURIComponent(query)}&format=json`, {
+      headers: { Accept: 'application/sparql-results+json', 'User-Agent': 'gameflow-catalog-sync/1.0' },
+    })
+    if (response.ok) return response.json()
+    if (![429, 500, 502, 503, 504].includes(response.status) || attempt === 5) {
+      throw new Error(`Wikidata returned ${response.status}`)
+    }
+    await new Promise((resolve) => setTimeout(resolve, attempt * 5000))
+  }
 }
 
 const existing = JSON.parse(await readFile('public/catalog.json', 'utf8').catch(() => '[]'))
