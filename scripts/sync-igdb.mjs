@@ -12,29 +12,6 @@ const tokenResponse = await fetch('https://id.twitch.tv/oauth2/token', {
 if (!tokenResponse.ok) throw new Error(`Twitch authentication failed: ${tokenResponse.status}`)
 const { access_token: accessToken } = await tokenResponse.json()
 
-const fetchPage = async (lastId) => {
-  const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date;
-  where platforms.id = (6,14,48,49,130,167,169)
-    & (category = 0 | category = 2 | category = 4 | category = 8 | category = 9 | category = 10)
-    & id > ${lastId};
-  sort id asc; limit 500;`
-  const response = await fetch('https://api.igdb.com/v4/games', {
-    method: 'POST',
-    headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
-    body: query,
-  })
-  if (!response.ok) throw new Error(`IGDB returned ${response.status}`)
-  return response.json()
-}
-const source = []
-let lastId = 0
-while (true) {
-  const page = await fetchPage(lastId)
-  source.push(...page)
-  if (page.length < 500) break
-  lastId = page[page.length - 1].id
-}
-
 const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
 const mapPlatform = (name) => {
   const value = name.toLowerCase()
@@ -44,17 +21,56 @@ const mapPlatform = (name) => {
   if (value.includes('switch')) return 'Switch'
   return null
 }
+
+const fetchPage = async (lastId) => {
+  const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date,category,parent_game;
+  where id > ${lastId};
+  sort id asc; limit 500;`
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    const response = await fetch('https://api.igdb.com/v4/games', {
+      method: 'POST',
+      headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
+      body: query,
+    })
+    if (response.ok) return response.json()
+    if (![429, 500, 502, 503, 504].includes(response.status) || attempt === 5) throw new Error(`IGDB returned ${response.status}`)
+    await new Promise((resolve) => setTimeout(resolve, attempt * 5000))
+  }
+}
+
+const source = []
+let lastId = 0
+let pageCount = 0
+while (true) {
+  const page = await fetchPage(lastId)
+  source.push(...page.filter((item) => {
+    const category = item.category ?? 0
+    const allowedCategory = [0, 2, 4, 8, 9, 10].includes(category)
+    const platforms = item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || []
+    const title = item.name?.toLowerCase() || ''
+    const cosmeticOnly = /(costume|skin|outfit|cosmetic|soundtrack|avatar|currency|wallpaper|artbook|season pass|bundle|pack)\b/.test(title)
+    return allowedCategory && !cosmeticOnly && platforms.length > 0
+  }))
+  if (page.length < 500) break
+  lastId = page[page.length - 1].id
+  pageCount += 1
+  if (pageCount % 10 === 0) console.log(`Scanned ${pageCount * 500} IGDB records; ${source.length} match the target catalog.`)
+  await new Promise((resolve) => setTimeout(resolve, 250))
+}
+
+if (!source.length) throw new Error('IGDB returned no matching games; existing catalog was not replaced')
+
 const merged = new Map()
 for (const item of source) {
   const game = {
-  id: `igdb-${item.id}`,
-  title: item.name,
-  genre: item.genres?.[0]?.name || 'Game',
-  hours: 'Unknown length',
-  description: item.summary || 'A game ready for your next adventure.',
-  badge: 'IGDB catalog',
-  image: item.cover?.url ? `https:${item.cover.url.replace('t_thumb', 't_cover_big')}` : '',
-  platforms: item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || [],
+    id: `igdb-${item.id}`,
+    title: item.name,
+    genre: item.genres?.[0]?.name || 'Game',
+    hours: 'Unknown length',
+    description: item.summary || 'A game ready for your next adventure.',
+    badge: 'IGDB catalog',
+    image: item.cover?.url ? `https:${item.cover.url.replace('t_thumb', 't_cover_big')}` : '',
+    platforms: item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || [],
   }
   if (!game.title) continue
   const key = normalizeTitle(game.title)
@@ -69,8 +85,6 @@ for (const item of source) {
   })
 }
 
-if (!source.length) throw new Error('IGDB returned no games; existing catalog was not replaced')
-
 await mkdir('public', { recursive: true })
 await writeFile('public/catalog.json', `${JSON.stringify([...merged.values()], null, 2)}\n`)
-console.log(`IGDB sync complete: ${merged.size} unique games.`)
+console.log(`IGDB sync complete: ${merged.size} unique games from ${source.length} matching records.`)
