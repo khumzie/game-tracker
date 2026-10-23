@@ -39,10 +39,14 @@ Then restart Vite and choose **Import → Import from RAWG**. The importer retri
 JSON can be an array of records or `{ "games": [...] }`. CSV expects:
 
 ```text
-title,genre,platforms,hours,description
+title,genre,releaseDate,platforms,hours,description
 ```
 
 Separate multiple CSV platforms with `|`, for example `PC|Xbox|PlayStation`.
+
+Release dates are shown on discovery and library cards, and can be used with the
+Filters panel to bulk-remove games by release year and category/genre. Bulk
+removals are saved in `localStorage` on the current device.
 
 ## Run locally
 

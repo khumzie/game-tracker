@@ -47,6 +47,22 @@ const fetchPage = async (platformId, lastId) => {
   }
 }
 
+const fetchTimeToBeat = async (gameIds) => {
+  const times = new Map()
+  for (let index = 0; index < gameIds.length; index += 500) {
+    const ids = gameIds.slice(index, index + 500)
+    const query = `fields game_id,normally,hltb,completely; where game_id = (${ids.join(',')}); limit 500;`
+    const response = await fetch('https://api.igdb.com/v4/game_time_to_beats', {
+      method: 'POST',
+      headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
+      body: query,
+    })
+    if (!response.ok) throw new Error(`IGDB time-to-beat lookup failed: ${response.status}`)
+    ;(await response.json()).forEach((item) => times.set(item.game_id, item))
+  }
+  return times
+}
+
 const sourceById = new Map()
 for (const platform of targetPlatforms) {
   let lastId = 0
@@ -72,13 +88,17 @@ const source = [...sourceById.values()]
 
 if (!source.length) throw new Error('IGDB returned no matching games; existing catalog was not replaced')
 
+const timeToBeat = await fetchTimeToBeat(source.map((item) => item.id))
 const merged = new Map()
 for (const item of source) {
+  const time = timeToBeat.get(item.id)
+  const hours = time?.normally || time?.hltb || time?.completely
   const game = {
     id: `igdb-${item.id}`,
     title: item.name,
     genre: item.genres?.[0]?.name || 'Game',
-    hours: 'Unknown length',
+    hours: hours ? `${hours} hrs` : 'Unknown length',
+    releaseDate: item.first_release_date ? new Date(item.first_release_date * 1000).toISOString().slice(0, 10) : '',
     description: item.summary || 'A game ready for your next adventure.',
     badge: 'IGDB catalog',
     image: item.cover?.url ? `https:${item.cover.url.replace('t_thumb', 't_cover_big')}` : '',

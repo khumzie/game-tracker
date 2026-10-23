@@ -2,28 +2,39 @@ import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const STORAGE_KEY = 'gameflow-decisions'
+const REMOVED_KEY = 'gameflow-removed-games'
 const OFFSET_KEY = 'gameflow-wikidata-offset'
 const SYNC_DONE_KEY = 'gameflow-wikidata-complete'
 
 const games = [
-  { id: 'elden-ring', title: 'Elden Ring', genre: 'Action RPG', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '100+ hrs', color: 'ember', badge: 'Must play', description: 'A vast, mysterious world built for getting lost in.' },
-  { id: 'hades-ii', title: 'Hades II', genre: 'Roguelike', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '40 hrs', color: 'violet', badge: 'New release', description: 'Fight, die, and grow stronger in the underworld.' },
-  { id: 'baldurs-gate-3', title: "Baldur's Gate 3", genre: 'RPG', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '120+ hrs', color: 'gold', badge: 'Critics pick', description: 'Your choices shape a story with no two playthroughs alike.' },
-  { id: 'zelda-totk', title: 'Zelda: Tears of the Kingdom', genre: 'Adventure', platforms: ['Switch'], hours: '80 hrs', color: 'sky', badge: 'Nintendo exclusive', description: 'Build, explore, and uncover the secrets above and below Hyrule.' },
-  { id: 'forza-horizon-5', title: 'Forza Horizon 5', genre: 'Racing', platforms: ['PC', 'Xbox'], hours: '60 hrs', color: 'lime', badge: 'Open world', description: 'Your ultimate horizon awaits in the vibrant landscapes of Mexico.' },
-  { id: 'god-of-war-ragnarok', title: 'God of War Ragnarök', genre: 'Action adventure', platforms: ['PC', 'PlayStation'], hours: '25 hrs', color: 'ice', badge: 'Story rich', description: 'Face the end of the gods with Kratos and Atreus.' },
-  { id: 'stardew-valley', title: 'Stardew Valley', genre: 'Simulation', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '50+ hrs', color: 'sunset', badge: 'Cozy', description: 'Turn an overgrown field into a home, one day at a time.' },
-  { id: 'cyberpunk-2077', title: 'Cyberpunk 2077', genre: 'Action RPG', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '70 hrs', color: 'neon', badge: 'Immersive', description: 'Become an urban mercenary in the city of dreams.' },
-  { id: 'animal-crossing', title: 'Animal Crossing: New Horizons', genre: 'Life sim', platforms: ['Switch'], hours: '100+ hrs', color: 'coral', badge: 'Relaxing', description: 'Build your perfect island getaway at your own pace.' },
-  { id: 'monster-hunter-wilds', title: 'Monster Hunter Wilds', genre: 'Action RPG', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '80 hrs', color: 'forest', badge: 'Co-op ready', description: 'Hunt colossal creatures in a world that changes with the seasons.' },
-  { id: 'hollow-knight', title: 'Hollow Knight', genre: 'Metroidvania', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '35 hrs', color: 'midnight', badge: 'Indie gem', description: 'Descend into a haunting, beautifully hand-drawn kingdom.' },
-  { id: 'marvel-rivals', title: 'Marvel Rivals', genre: 'Hero shooter', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '∞ replayable', color: 'crimson', badge: 'Multiplayer', description: 'Assemble an all-star Marvel squad and battle it out.' },
+  { id: 'elden-ring', title: 'Elden Ring', genre: 'Action RPG', releaseDate: '2022-02-25', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '100+ hrs', color: 'ember', badge: 'Must play', description: 'A vast, mysterious world built for getting lost in.' },
+  { id: 'hades-ii', title: 'Hades II', genre: 'Roguelike', releaseDate: '2025-09-25', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '40 hrs', color: 'violet', badge: 'New release', description: 'Fight, die, and grow stronger in the underworld.' },
+  { id: 'baldurs-gate-3', title: "Baldur's Gate 3", genre: 'RPG', releaseDate: '2023-08-03', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '120+ hrs', color: 'gold', badge: 'Critics pick', description: 'Your choices shape a story with no two playthroughs alike.' },
+  { id: 'zelda-totk', title: 'Zelda: Tears of the Kingdom', genre: 'Adventure', releaseDate: '2023-05-12', platforms: ['Switch'], hours: '80 hrs', color: 'sky', badge: 'Nintendo exclusive', description: 'Build, explore, and uncover the secrets above and below Hyrule.' },
+  { id: 'forza-horizon-5', title: 'Forza Horizon 5', genre: 'Racing', releaseDate: '2021-11-05', platforms: ['PC', 'Xbox'], hours: '60 hrs', color: 'lime', badge: 'Open world', description: 'Your ultimate horizon awaits in the vibrant landscapes of Mexico.' },
+  { id: 'god-of-war-ragnarok', title: 'God of War Ragnarök', genre: 'Action adventure', releaseDate: '2022-11-09', platforms: ['PC', 'PlayStation'], hours: '25 hrs', color: 'ice', badge: 'Story rich', description: 'Face the end of the gods with Kratos and Atreus.' },
+  { id: 'stardew-valley', title: 'Stardew Valley', genre: 'Simulation', releaseDate: '2016-02-26', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '50+ hrs', color: 'sunset', badge: 'Cozy', description: 'Turn an overgrown field into a home, one day at a time.' },
+  { id: 'cyberpunk-2077', title: 'Cyberpunk 2077', genre: 'Action RPG', releaseDate: '2020-12-10', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '70 hrs', color: 'neon', badge: 'Immersive', description: 'Become an urban mercenary in the city of dreams.' },
+  { id: 'animal-crossing', title: 'Animal Crossing: New Horizons', genre: 'Life sim', releaseDate: '2020-03-20', platforms: ['Switch'], hours: '100+ hrs', color: 'coral', badge: 'Relaxing', description: 'Build your perfect island getaway at your own pace.' },
+  { id: 'monster-hunter-wilds', title: 'Monster Hunter Wilds', genre: 'Action RPG', releaseDate: '2025-02-28', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '80 hrs', color: 'forest', badge: 'Co-op ready', description: 'Hunt colossal creatures in a world that changes with the seasons.' },
+  { id: 'hollow-knight', title: 'Hollow Knight', genre: 'Metroidvania', releaseDate: '2017-02-24', platforms: ['PC', 'Xbox', 'PlayStation', 'Switch'], hours: '35 hrs', color: 'midnight', badge: 'Indie gem', description: 'Descend into a haunting, beautifully hand-drawn kingdom.' },
+  { id: 'marvel-rivals', title: 'Marvel Rivals', genre: 'Hero shooter', releaseDate: '2024-12-06', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '∞ replayable', color: 'crimson', badge: 'Multiplayer', description: 'Assemble an all-star Marvel squad and battle it out.' },
 ]
 
 const platformIcons = { PC: '▣', Xbox: '✕', PlayStation: '△', Switch: '▰' }
 const artwork = ['ember', 'violet', 'gold', 'sky', 'lime', 'ice', 'sunset', 'neon', 'coral', 'forest', 'midnight', 'crimson']
 
 const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
+const formatReleaseDate = (value) => {
+  if (!value) return 'Release date unknown'
+  const date = new Date(typeof value === 'number' ? value * 1000 : value)
+  return Number.isNaN(date.getTime()) ? 'Release date unknown' : `Released ${date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}`
+}
+const releaseYear = (value) => {
+  if (!value) return ''
+  const date = new Date(typeof value === 'number' ? value * 1000 : value)
+  return Number.isNaN(date.getTime()) ? '' : String(date.getFullYear())
+}
 const mapPlatform = (name) => {
   const value = name.toLowerCase()
   if (value.includes('pc') || value.includes('windows') || value.includes('linux') || value.includes('mac')) return 'PC'
@@ -105,6 +116,13 @@ function App() {
       return {}
     }
   })
+  const [removedGames, setRemovedGames] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem(REMOVED_KEY)) || {}
+    } catch {
+      return {}
+    }
+  })
   const [activeTab, setActiveTab] = useState('discover')
   const [filter, setFilter] = useState('All')
   const [drag, setDrag] = useState({ startX: 0, startY: 0, x: 0, y: 0, active: false })
@@ -113,10 +131,15 @@ function App() {
   const [importStatus, setImportStatus] = useState('')
   const [isImporting, setIsImporting] = useState(false)
   const [importOffset, setImportOffset] = useState(() => Number(localStorage.getItem(OFFSET_KEY) || 0))
+  const [removeYear, setRemoveYear] = useState('')
+  const [removeGenre, setRemoveGenre] = useState('')
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(decisions))
   }, [decisions])
+  useEffect(() => {
+    localStorage.setItem(REMOVED_KEY, JSON.stringify(removedGames))
+  }, [removedGames])
   useEffect(() => {
     localStorage.setItem(OFFSET_KEY, String(importOffset))
   }, [importOffset])
@@ -135,7 +158,7 @@ function App() {
           const chunkGames = await response.json()
           if (!cancelled) {
             setImportStatus(`Loading catalog chunk ${chunkIndex + 1} of ${index.chunks.length}`)
-            setCatalog((current) => mergeGames(current, chunkGames))
+            setCatalog((current) => mergeGames(current, chunkGames).filter((game) => !removedGames[game.id]))
           }
         }
         if (!cancelled) {
@@ -147,7 +170,7 @@ function App() {
     }
     loadPublishedCatalog()
     return () => { cancelled = true }
-  }, [])
+  }, [removedGames])
 
   const currentGames = useMemo(() => {
     const undecided = catalog.filter((game) => !decisions[game.id])
@@ -168,7 +191,8 @@ function App() {
       id: game.id || normalizeTitle(game.title || game.name || `imported-${index}`),
       platforms: Array.isArray(game.platforms) ? game.platforms.map((item) => typeof item === 'string' ? mapPlatform(item) || item : mapPlatform(item.name || '')).filter(Boolean) : [],
       genre: game.genre || game.genres?.[0]?.name || 'Game',
-      hours: game.hours || 'Unknown length',
+      releaseDate: game.releaseDate || game.release_date || game.released || game.first_release_date || (game.year ? String(game.year) : ''),
+      hours: game.hours || (game.playtime ? `${game.playtime} hrs` : 'Unknown length'),
     }))
     setCatalog((current) => mergeGames(current, normalized))
     setImportStatus(`Added ${normalized.filter((game) => game.title).length} games. Duplicates were merged.`)
@@ -223,7 +247,7 @@ function App() {
         return response.json()
       })))
       addImportedGames(pages.flatMap((page) => page.results.map((game) => ({
-        id: `rawg-${game.id}`, title: game.name, genre: game.genres?.[0]?.name || 'Game', description: game.description_raw?.slice(0, 150), platforms: game.platforms?.map((item) => item.platform.name).map(mapPlatform).filter(Boolean) || [], badge: 'RAWG import',
+        id: `rawg-${game.id}`, title: game.name, genre: game.genres?.[0]?.name || 'Game', releaseDate: game.released || '', description: game.description_raw?.slice(0, 150), platforms: game.platforms?.map((item) => item.platform.name).map(mapPlatform).filter(Boolean) || [], badge: 'RAWG import', hours: game.playtime ? `${game.playtime} hrs` : 'Unknown length',
       }))))
     } catch (error) {
       setImportStatus(`Import failed: ${error.message}`)
@@ -270,6 +294,23 @@ function App() {
     setDecisions((current) => ({ ...current, [id]: decision }))
   }
 
+  const genres = [...new Set(catalog.map((game) => game.genre).filter(Boolean))].sort()
+  const years = [...new Set(catalog.map((game) => releaseYear(game.releaseDate)).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
+  const removableGames = catalog.filter((game) => (!removeYear || releaseYear(game.releaseDate) === removeYear) && (!removeGenre || game.genre === removeGenre))
+  const removeGames = () => {
+    if ((!removeYear && !removeGenre) || !removableGames.length) return
+    const nextRemoved = { ...removedGames }
+    removableGames.forEach((game) => { nextRemoved[game.id] = true })
+    setRemovedGames(nextRemoved)
+    setCatalog((current) => current.filter((game) => !nextRemoved[game.id]))
+    setDecisions((current) => {
+      const next = { ...current }
+      removableGames.forEach((game) => { delete next[game.id] })
+      return next
+    })
+    setImportStatus(`Removed ${removableGames.length.toLocaleString()} games from this device.`)
+  }
+
   const visibleLibrary = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
   const rotation = Math.max(-12, Math.min(12, drag.x / 14))
   const cardStyle = { transform: `translate(${drag.x}px, ${drag.y}px) rotate(${rotation}deg)` }
@@ -304,10 +345,13 @@ function App() {
             <strong>Grow your library</strong>
             <p>Free import scope: PC plus Xbox One/Series, PlayStation 4/5, and Nintendo Switch. Wii, DS, and older console-only games are excluded. Repeat the import to load the next batch. Titles are merged and platforms combined.</p>
             <div className="import-actions"><label className="import-file">Choose JSON / CSV<input type="file" accept=".json,.csv,application/json,text/csv" onChange={importFile} /></label><button className="free-source-button" onClick={importWikidata} disabled={isImporting}>{isImporting ? 'Importing…' : `Import free batch ${importOffset / 500 + 1}`}</button><button className="rawg-button" onClick={importRawg} disabled={isImporting}>Import from RAWG</button></div>
-            <small>CSV columns: title, genre, platforms (separate platforms with |), hours, description. Wikidata coverage is community-maintained, so no free source can guarantee every game ever released.</small>
+            <small>CSV columns: title, genre, releaseDate, platforms (separate platforms with |), hours, description. Wikidata coverage is community-maintained, so no free source can guarantee every game ever released.</small>
             {importStatus && <div className="import-status">{importStatus}</div>}
           </div>}
-          {showFilters && <div className="filters">{['All', 'PC', 'Xbox', 'PlayStation', 'Switch'].map((item) => <button key={item} className={filter === item ? 'selected' : ''} onClick={() => setFilter(item)}>{item === 'All' ? 'All platforms' : `${platformIcons[item]} ${item}`}</button>)}</div>}
+          {showFilters && <div className="filters">
+            <div className="filter-group"><span>Platforms</span>{['All', 'PC', 'Xbox', 'PlayStation', 'Switch'].map((item) => <button key={item} className={filter === item ? 'selected' : ''} onClick={() => setFilter(item)}>{item === 'All' ? 'All platforms' : `${platformIcons[item]} ${item}`}</button>)}</div>
+            <div className="bulk-remove"><strong>Bulk remove</strong><span>Remove matching games from this device.</span><div className="bulk-remove-controls"><select aria-label="Release year to remove" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{years.map((year) => <option key={year} value={year}>{year}</option>)}</select><select aria-label="Category to remove" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={(!removeYear && !removeGenre) || !removableGames.length}>Remove {removableGames.length.toLocaleString()}</button></div></div>
+          </div>}
 
           <section className="deck" aria-label="Game discovery deck">
             {currentGame ? (
@@ -317,7 +361,7 @@ function App() {
                 <article className={`game-card ${currentGame.color}`} style={cardStyle} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}>
                   <div className="card-art">{currentGame.image ? <img className="game-image" src={currentGame.image} alt="" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <><span className="art-orb orb-one" /><span className="art-orb orb-two" /><span className="art-symbol">✦</span></>}<span className="card-badge">{currentGame.badge}</span></div>
                   <div className="card-content">
-                    <div className="card-meta"><span>{currentGame.genre}</span><span>·</span><span>{currentGame.hours}</span></div>
+                    <div className="card-meta"><span>{currentGame.genre}</span><span>·</span><span>{formatReleaseDate(currentGame.releaseDate)}</span><span>·</span><span>{currentGame.hours}</span></div>
                     <h2>{currentGame.title}</h2>
                     <p className="card-description">{currentGame.description}</p>
                     <div className="platforms">{currentGame.platforms.map((platform) => <span key={platform} title={platform}>{platformIcons[platform]} {platform}</span>)}</div>
@@ -334,7 +378,7 @@ function App() {
       ) : (
         <section className="library">
           <div className="library-heading"><div><p className="eyebrow">{activeTab === 'liked' ? 'YOUR SHORTLIST' : activeTab === 'played' ? 'YOUR HISTORY' : 'YOUR DECLINED GAMES'}</p><h2>{activeTab === 'liked' ? 'Want to play' : activeTab === 'played' ? 'Played games' : 'Declined'}</h2></div><span className="count-pill">{visibleLibrary.length} games</span></div>
-          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.image ? <img className="mini-image" src={game.image} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><label className="recategorize"><span className="sr-only">Move {game.title} to</span><select value={decisions[game.id]} onChange={(event) => recategorizeGame(game.id, event.target.value)}><option value="liked">Want to play</option><option value="played">Played</option><option value="skipped">Declined</option><option value="discover">Discover</option></select></label></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
+          {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.image ? <img className="mini-image" src={game.image} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {formatReleaseDate(game.releaseDate)} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><label className="recategorize"><span className="sr-only">Move {game.title} to</span><select value={decisions[game.id]} onChange={(event) => recategorizeGame(game.id, event.target.value)}><option value="liked">Want to play</option><option value="played">Played</option><option value="skipped">Declined</option><option value="discover">Discover</option></select></label></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
         </section>
       )}
 
