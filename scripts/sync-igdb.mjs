@@ -100,7 +100,7 @@ for (const item of source) {
     id: `igdb-${item.id}`,
     title: item.name,
     genre: item.genres?.[0]?.name || 'Game',
-    hours: hours ? `${hours} hrs` : 'Unknown length',
+    hours: hours ? `${Math.max(1, Math.round(hours / 3600))} hrs` : 'Unknown length',
     releaseDate: item.first_release_date ? new Date(item.first_release_date * 1000).toISOString().slice(0, 10) : '',
     description: item.summary || 'A game ready for your next adventure.',
     badge: 'IGDB catalog',
