@@ -51,13 +51,16 @@ const fetchTimeToBeat = async (gameIds) => {
   const times = new Map()
   for (let index = 0; index < gameIds.length; index += 500) {
     const ids = gameIds.slice(index, index + 500)
-    const query = `fields game_id,normally,hltb,completely; where game_id = (${ids.join(',')}); limit 500;`
+    const query = `fields game_id,normally,hastily,completely; where game_id = (${ids.join(',')}); limit 500;`
     const response = await fetch('https://api.igdb.com/v4/game_time_to_beats', {
       method: 'POST',
       headers: { 'Client-ID': clientId, Authorization: `Bearer ${accessToken}`, 'Content-Type': 'text/plain' },
       body: query,
     })
-    if (!response.ok) throw new Error(`IGDB time-to-beat lookup failed: ${response.status}`)
+    if (!response.ok) {
+      console.warn(`Optional IGDB time-to-beat lookup stopped: ${response.status}`)
+      return times
+    }
     ;(await response.json()).forEach((item) => times.set(item.game_id, item))
   }
   return times
@@ -92,7 +95,7 @@ const timeToBeat = await fetchTimeToBeat(source.map((item) => item.id))
 const merged = new Map()
 for (const item of source) {
   const time = timeToBeat.get(item.id)
-  const hours = time?.normally || time?.hltb || time?.completely
+  const hours = time?.normally || time?.hastily || time?.completely
   const game = {
     id: `igdb-${item.id}`,
     title: item.name,
