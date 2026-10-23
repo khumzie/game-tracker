@@ -156,6 +156,7 @@ function App() {
   const [removeGenre, setRemoveGenre] = useState('')
   const [bulkRemoveSearch, setBulkRemoveSearch] = useState('')
   const [selectedBulkRemoveIds, setSelectedBulkRemoveIds] = useState({})
+  const [librarySort, setLibrarySort] = useState('title')
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(decisions))
@@ -369,7 +370,20 @@ function App() {
     setImportStatus(`Removed ${gamesToRemove.length.toLocaleString()} games from this device.`)
   }
 
-  const visibleLibrary = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
+  const visibleLibrary = useMemo(() => {
+    const library = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
+    return [...library].sort((first, second) => {
+      if (librarySort === 'release-oldest' || librarySort === 'release-newest') {
+        const firstDate = first.releaseDate ? new Date(first.releaseDate).getTime() : 0
+        const secondDate = second.releaseDate ? new Date(second.releaseDate).getTime() : 0
+        return (librarySort === 'release-oldest' ? firstDate - secondDate : secondDate - firstDate) || first.title.localeCompare(second.title, undefined, { numeric: true, sensitivity: 'base' })
+      }
+      if (librarySort === 'genre') {
+        return (first.genre || '').localeCompare(second.genre || '', undefined, { sensitivity: 'base' }) || first.title.localeCompare(second.title, undefined, { numeric: true, sensitivity: 'base' })
+      }
+      return first.title.localeCompare(second.title, undefined, { numeric: true, sensitivity: 'base' })
+    })
+  }, [activeTab, likedGames, playedGames, declinedGames, librarySort])
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -434,7 +448,7 @@ function App() {
         </>
       ) : (
         <section className="library">
-          <div className="library-heading"><div><p className="eyebrow">{activeTab === 'liked' ? 'YOUR SHORTLIST' : activeTab === 'played' ? 'YOUR HISTORY' : 'YOUR DECLINED GAMES'}</p><h2>{activeTab === 'liked' ? 'Want to play' : activeTab === 'played' ? 'Played games' : 'Declined'}</h2></div><span className="count-pill">{visibleLibrary.length} games</span></div>
+          <div className="library-heading"><div><p className="eyebrow">{activeTab === 'liked' ? 'YOUR SHORTLIST' : activeTab === 'played' ? 'YOUR HISTORY' : 'YOUR DECLINED GAMES'}</p><h2>{activeTab === 'liked' ? 'Want to play' : activeTab === 'played' ? 'Played games' : 'Declined'}</h2></div><div className="library-heading-actions">{activeTab === 'liked' && <label className="library-sort"><span>Sort</span><select aria-label="Sort Want to play games" value={librarySort} onChange={(event) => setLibrarySort(event.target.value)}><option value="title">Title (A-Z)</option><option value="genre">Genre</option><option value="release-newest">Release date (newest)</option><option value="release-oldest">Release date (oldest)</option></select></label>}<span className="count-pill">{visibleLibrary.length} games</span></div></div>
           {visibleLibrary.length ? <div className="library-grid">{visibleLibrary.map((game) => <article className="library-card" key={game.id}><div className={`mini-art ${game.color}`}>{game.screenshot || game.image ? <img className="mini-image" src={game.screenshot || game.image} alt="" loading="lazy" decoding="async" onError={(event) => { event.currentTarget.src = game.image || ''; if (!game.image) event.currentTarget.style.display = 'none' }} /> : <span>✦</span>}</div><div className="library-info"><h3>{game.title}</h3><p>{game.genre} · {formatReleaseDate(game.releaseDate)} · {game.hours}</p><div className="platforms">{game.platforms.map((platform) => <span key={platform}>{platformIcons[platform]}</span>)}</div></div><label className="recategorize"><span className="sr-only">Move {game.title} to</span><select value={decisions[game.id]} onChange={(event) => recategorizeGame(game.id, event.target.value)}><option value="liked">Want to play</option><option value="played">Played</option><option value="skipped">Declined</option><option value="discover">Discover</option></select></label></article>)}</div> : <div className="empty-state small"><div className="empty-icon">{activeTab === 'declined' ? '×' : '♡'}</div><h2>No games here yet</h2><p>{activeTab === 'declined' ? 'Games you swipe left will be collected here.' : 'Swipe right on games you want to remember.'}</p><button onClick={() => setActiveTab('discover')}>Discover games</button></div>}
         </section>
       )}
