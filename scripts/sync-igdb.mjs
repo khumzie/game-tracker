@@ -32,7 +32,7 @@ const targetPlatforms = [
 ]
 
 const fetchPage = async (platformId, lastId) => {
-  const query = `fields name,summary,cover.url,genres.name,platforms.name,first_release_date,category,parent_game;
+  const query = `fields name,summary,cover.url,screenshots.url,genres.name,platforms.name,first_release_date,category,parent_game;
   where platforms = (${platformId}) & id > ${lastId};
   sort id asc; limit 500;`
   for (let attempt = 1; attempt <= 5; attempt += 1) {
@@ -105,6 +105,7 @@ for (const item of source) {
     description: item.summary || 'A game ready for your next adventure.',
     badge: 'IGDB catalog',
     image: item.cover?.url ? `https:${item.cover.url.replace('t_thumb', 't_cover_big')}` : '',
+    screenshot: item.screenshots?.[0]?.url ? `https:${item.screenshots[0].url.replace('t_thumb', 't_screenshot_big')}` : '',
     platforms: item.platforms?.map((platform) => mapPlatform(platform.name)).filter(Boolean) || [],
   }
   if (!game.title) continue
@@ -116,6 +117,7 @@ for (const item of source) {
     id: previous?.id || game.id,
     platforms: [...new Set([...(previous?.platforms || []), ...(game.platforms || [])])],
     image: game.image || previous?.image || '',
+    screenshot: game.screenshot || previous?.screenshot || '',
     description: game.description !== 'A game ready for your next adventure.' ? game.description : previous?.description,
   })
 }
