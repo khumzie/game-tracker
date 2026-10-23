@@ -25,7 +25,21 @@ const games = [
 const platformIcons = { PC: '▣', Xbox: '✕', PlayStation: '△', Switch: '▰' }
 const artwork = ['ember', 'violet', 'gold', 'sky', 'lime', 'ice', 'sunset', 'neon', 'coral', 'forest', 'midnight', 'crimson']
 
-const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
+const normalizeTitle = (title) => String(title || '').toLowerCase().replace(/[^a-z0-9]/g, '')
+const fuzzyMatch = (query, game) => {
+  const terms = normalizeTitle(query).match(/[a-z0-9]+/g) || []
+  if (!terms.length) return true
+  const fields = [game.title, game.genre, ...(game.platforms || [])].map(normalizeTitle)
+  return terms.every((term) => fields.some((field) => {
+    if (field.includes(term)) return true
+    let queryIndex = 0
+    for (const character of field) {
+      if (character === term[queryIndex]) queryIndex += 1
+      if (queryIndex === term.length) return true
+    }
+    return false
+  }))
+}
 const formatReleaseDate = (value) => {
   if (!value) return 'Release date unknown'
   const date = new Date(typeof value === 'number' ? value * 1000 : value)
@@ -126,6 +140,7 @@ function App() {
   })
   const [activeTab, setActiveTab] = useState('discover')
   const [filter, setFilter] = useState('All')
+  const [searchQuery, setSearchQuery] = useState('')
   const [browseYear, setBrowseYear] = useState('')
   const [browseGenre, setBrowseGenre] = useState('')
   const [isDragging, setIsDragging] = useState(false)
@@ -185,9 +200,9 @@ function App() {
       const year = releaseYear(game.releaseDate)
       const matchesYear = !browseYear || (browseYear === UNKNOWN_YEAR ? !year : year === browseYear)
       const matchesGenre = !browseGenre || game.genre === browseGenre
-      return matchesPlatform && matchesYear && matchesGenre
+      return matchesPlatform && matchesYear && matchesGenre && fuzzyMatch(searchQuery, game)
     })
-  }, [catalog, decisions, filter, browseYear, browseGenre])
+  }, [catalog, decisions, filter, browseYear, browseGenre, searchQuery])
 
   const likedGames = catalog.filter((game) => decisions[game.id] === 'liked')
   const playedGames = catalog.filter((game) => decisions[game.id] === 'played')
@@ -368,6 +383,7 @@ function App() {
         <>
           <div className="toolbar">
             <div><strong>{progress}% explored · {catalog.length.toLocaleString()} games</strong><span className="progress-track"><span style={{ width: `${Math.max(progress, 3)}%` }} /></span></div>
+            <label className="search-box"><span className="sr-only">Search games</span><span className="search-icon">⌕</span><input type="search" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder="Search games" /></label>
             <div className="toolbar-actions"><button className={`filter-button ${showImport ? 'selected' : ''}`} onClick={() => setShowImport(!showImport)}>＋ <span>Import</span></button><button className={`filter-button ${showFilters ? 'selected' : ''}`} onClick={() => setShowFilters(!showFilters)}>☷ <span>Filters</span></button></div>
           </div>
           {showImport && <div className="import-panel">
@@ -401,7 +417,7 @@ function App() {
                 <div className="action-row"><button className="action skip" onClick={() => decide('skipped')} aria-label="Skip game">×</button><button className="action played" onClick={() => decide('played')} aria-label="Mark as played">↑</button><button className="action like" onClick={() => decide('liked')} aria-label="Add to want to play">♥</button></div>
               </>
             ) : (
-              <div className="empty-state"><div className="empty-icon">✦</div><h2>You're all caught up</h2><p>We saved your choices. Clear a filter or revisit your library to keep exploring.</p><button onClick={() => setDecisions({})}>Start over</button></div>
+              <div className="empty-state"><div className="empty-icon">✦</div><h2>{searchQuery ? 'No matching games' : "You're all caught up"}</h2><p>{searchQuery ? 'Try a different title, genre, or platform.' : 'We saved your choices. Clear a filter or revisit your library to keep exploring.'}</p><button onClick={() => searchQuery ? setSearchQuery('') : setDecisions({})}>{searchQuery ? 'Clear search' : 'Start over'}</button></div>
             )}
           </section>
         </>
