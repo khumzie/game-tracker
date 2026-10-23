@@ -154,6 +154,8 @@ function App() {
   const [importOffset, setImportOffset] = useState(() => Number(localStorage.getItem(OFFSET_KEY) || 0))
   const [removeYear, setRemoveYear] = useState('')
   const [removeGenre, setRemoveGenre] = useState('')
+  const [bulkRemoveSearch, setBulkRemoveSearch] = useState('')
+  const [selectedBulkRemoveIds, setSelectedBulkRemoveIds] = useState({})
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(decisions))
@@ -343,19 +345,26 @@ function App() {
   const knownYears = [...new Set(catalog.map((game) => releaseYear(game.releaseDate)).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
   const hasUnknownYears = catalog.some((game) => !releaseYear(game.releaseDate))
   const hasActiveBrowseFilters = filter !== 'All' || browseYear || browseGenre
-  const removableGames = catalog.filter((game) => (!removeYear || (removeYear === UNKNOWN_YEAR ? !releaseYear(game.releaseDate) : releaseYear(game.releaseDate) === removeYear)) && (!removeGenre || game.genre === removeGenre))
+  const bulkRemoveResults = useMemo(() => catalog.filter((game) => {
+    const year = releaseYear(game.releaseDate)
+    const matchesYear = !removeYear || (removeYear === UNKNOWN_YEAR ? !year : year === removeYear)
+    const matchesGenre = !removeGenre || game.genre === removeGenre
+    return fuzzyMatch(bulkRemoveSearch, game) && matchesYear && matchesGenre
+  }).slice(0, 100), [catalog, bulkRemoveSearch, removeYear, removeGenre])
+  const selectedBulkRemoveGames = bulkRemoveResults.filter((game) => selectedBulkRemoveIds[game.id])
   const removeGames = () => {
-    if ((!removeYear && !removeGenre) || !removableGames.length) return
+    if (!selectedBulkRemoveGames.length) return
     const nextRemoved = { ...removedGames }
-    removableGames.forEach((game) => { nextRemoved[game.id] = true })
+    selectedBulkRemoveGames.forEach((game) => { nextRemoved[game.id] = true })
     setRemovedGames(nextRemoved)
     setCatalog((current) => current.filter((game) => !nextRemoved[game.id]))
     setDecisions((current) => {
       const next = { ...current }
-      removableGames.forEach((game) => { delete next[game.id] })
+      selectedBulkRemoveGames.forEach((game) => { delete next[game.id] })
       return next
     })
-    setImportStatus(`Removed ${removableGames.length.toLocaleString()} games from this device.`)
+    setSelectedBulkRemoveIds({})
+    setImportStatus(`Removed ${selectedBulkRemoveGames.length.toLocaleString()} selected games from this device.`)
   }
 
   const visibleLibrary = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
@@ -396,7 +405,7 @@ function App() {
           {showFilters && <div className="filters">
             <div className="filter-group"><span>Platforms</span>{['All', 'PC', 'Xbox', 'PlayStation', 'Switch'].map((item) => <button key={item} className={filter === item ? 'selected' : ''} onClick={() => setFilter(item)}>{item === 'All' ? 'All platforms' : `${platformIcons[item]} ${item}`}</button>)}</div>
             <div className="filter-group browse-filters"><span>Swipe list</span><select aria-label="Filter swipe list by release year" value={browseYear} onChange={(event) => setBrowseYear(event.target.value)}><option value="">All release years</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Filter swipe list by genre" value={browseGenre} onChange={(event) => setBrowseGenre(event.target.value)}><option value="">All categories</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select>{hasActiveBrowseFilters && <button className="clear-filter-button" onClick={() => { setFilter('All'); setBrowseYear(''); setBrowseGenre('') }}>Clear swipe filters</button>}</div>
-            <div className="bulk-remove"><strong>Bulk remove</strong><span>Remove matching games from this device, including games with unknown release dates.</span><div className="bulk-remove-controls"><select aria-label="Release year to remove" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Category to remove" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={(!removeYear && !removeGenre) || !removableGames.length}>Remove {removableGames.length.toLocaleString()}</button></div></div>
+            <div className="bulk-remove"><strong>Bulk remove</strong><span>Search for games, tick only the records you want to remove, then confirm. Nothing is removed unless selected.</span><label className="bulk-search"><span className="sr-only">Search games to remove</span><span className="search-icon">⌕</span><input type="search" value={bulkRemoveSearch} onChange={(event) => setBulkRemoveSearch(event.target.value)} placeholder="Search games to remove" /></label><div className="bulk-remove-controls"><select aria-label="Release year to narrow removal search" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Category to narrow removal search" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={!selectedBulkRemoveGames.length}>Remove selected ({selectedBulkRemoveGames.length})</button></div>{bulkRemoveSearch && <div className="bulk-results" role="group" aria-label="Search results to remove"><div className="bulk-results-header"><span>{bulkRemoveResults.length ? `Showing ${bulkRemoveResults.length} matching games` : 'No matching games'}</span>{bulkRemoveResults.length > 0 && <button type="button" onClick={() => setSelectedBulkRemoveIds(Object.fromEntries(bulkRemoveResults.map((game) => [game.id, true])))}>Tick all shown</button>}</div>{bulkRemoveResults.map((game) => <label className="bulk-result" key={game.id}><input type="checkbox" checked={Boolean(selectedBulkRemoveIds[game.id])} onChange={(event) => setSelectedBulkRemoveIds((current) => ({ ...current, [game.id]: event.target.checked }))} /><span><strong>{game.title}</strong><small>{game.genre || 'Game'} · {formatReleaseDate(game.releaseDate)}</small></span></label>)}{catalog.filter((game) => fuzzyMatch(bulkRemoveSearch, game)).length > 100 && <small className="bulk-results-note">Showing the first 100 matches. Refine your search to see more.</small>}</div>}</div>
           </div>}
 
           <section className="deck" aria-label="Game discovery deck">
