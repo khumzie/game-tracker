@@ -5,6 +5,7 @@ const STORAGE_KEY = 'gameflow-decisions'
 const REMOVED_KEY = 'gameflow-removed-games'
 const OFFSET_KEY = 'gameflow-wikidata-offset'
 const SYNC_DONE_KEY = 'gameflow-wikidata-complete'
+const UNKNOWN_YEAR = '__unknown__'
 
 const games = [
   { id: 'elden-ring', title: 'Elden Ring', genre: 'Action RPG', releaseDate: '2022-02-25', platforms: ['PC', 'Xbox', 'PlayStation'], hours: '100+ hrs', color: 'ember', badge: 'Must play', description: 'A vast, mysterious world built for getting lost in.' },
@@ -317,8 +318,9 @@ function App() {
   }
 
   const genres = [...new Set(catalog.map((game) => game.genre).filter(Boolean))].sort()
-  const years = [...new Set(catalog.map((game) => releaseYear(game.releaseDate)).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
-  const removableGames = catalog.filter((game) => (!removeYear || releaseYear(game.releaseDate) === removeYear) && (!removeGenre || game.genre === removeGenre))
+  const knownYears = [...new Set(catalog.map((game) => releaseYear(game.releaseDate)).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
+  const hasUnknownYears = catalog.some((game) => !releaseYear(game.releaseDate))
+  const removableGames = catalog.filter((game) => (!removeYear || (removeYear === UNKNOWN_YEAR ? !releaseYear(game.releaseDate) : releaseYear(game.releaseDate) === removeYear)) && (!removeGenre || game.genre === removeGenre))
   const removeGames = () => {
     if ((!removeYear && !removeGenre) || !removableGames.length) return
     const nextRemoved = { ...removedGames }
@@ -369,7 +371,7 @@ function App() {
           </div>}
           {showFilters && <div className="filters">
             <div className="filter-group"><span>Platforms</span>{['All', 'PC', 'Xbox', 'PlayStation', 'Switch'].map((item) => <button key={item} className={filter === item ? 'selected' : ''} onClick={() => setFilter(item)}>{item === 'All' ? 'All platforms' : `${platformIcons[item]} ${item}`}</button>)}</div>
-            <div className="bulk-remove"><strong>Bulk remove</strong><span>Remove matching games from this device.</span><div className="bulk-remove-controls"><select aria-label="Release year to remove" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{years.map((year) => <option key={year} value={year}>{year}</option>)}</select><select aria-label="Category to remove" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={(!removeYear && !removeGenre) || !removableGames.length}>Remove {removableGames.length.toLocaleString()}</button></div></div>
+            <div className="bulk-remove"><strong>Bulk remove</strong><span>Remove matching games from this device, including games with unknown release dates.</span><div className="bulk-remove-controls"><select aria-label="Release year to remove" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Category to remove" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={(!removeYear && !removeGenre) || !removableGames.length}>Remove {removableGames.length.toLocaleString()}</button></div></div>
           </div>}
 
           <section className="deck" aria-label="Game discovery deck">
