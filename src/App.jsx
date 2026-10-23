@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 
 const STORAGE_KEY = 'gameflow-decisions'
@@ -125,7 +125,10 @@ function App() {
   })
   const [activeTab, setActiveTab] = useState('discover')
   const [filter, setFilter] = useState('All')
-  const [drag, setDrag] = useState({ startX: 0, startY: 0, x: 0, y: 0, active: false })
+  const [isDragging, setIsDragging] = useState(false)
+  const dragRef = useRef({ startX: 0, startY: 0, x: 0, y: 0, active: false })
+  const cardRef = useRef(null)
+  const animationFrameRef = useRef(0)
   const [showFilters, setShowFilters] = useState(false)
   const [showImport, setShowImport] = useState(false)
   const [importStatus, setImportStatus] = useState('')
@@ -182,7 +185,9 @@ function App() {
   const playedGames = catalog.filter((game) => decisions[game.id] === 'played')
   const declinedGames = catalog.filter((game) => decisions[game.id] === 'skipped')
   const currentGame = currentGames[0]
-  const progress = Math.round((Object.keys(decisions).length / catalog.length) * 100)
+  const removedCount = Object.keys(removedGames).length
+  const exploredCount = Object.keys(decisions).length + removedCount
+  const progress = Math.round((exploredCount / (catalog.length + removedCount)) * 100)
 
   const addImportedGames = (incoming) => {
     const normalized = incoming.map((game, index) => ({
@@ -258,26 +263,43 @@ function App() {
 
   const decide = (decision) => {
     if (!currentGame) return
+    if (cardRef.current) cardRef.current.style.transform = 'translate3d(0, 0, 0) rotate(0deg)'
     setDecisions((current) => ({ ...current, [currentGame.id]: decision }))
-    setDrag({ startX: 0, startY: 0, x: 0, y: 0, active: false })
+    dragRef.current = { startX: 0, startY: 0, x: 0, y: 0, active: false }
+    setIsDragging(false)
   }
 
   const handlePointerDown = (event) => {
-    setDrag({ startX: event.clientX, startY: event.clientY, x: 0, y: 0, active: true })
+    dragRef.current = { startX: event.clientX, startY: event.clientY, x: 0, y: 0, active: true }
+    setIsDragging(true)
     event.currentTarget.setPointerCapture?.(event.pointerId)
   }
 
   const handlePointerMove = (event) => {
+    const drag = dragRef.current
     if (!drag.active) return
-    setDrag((current) => ({ ...current, x: event.clientX - current.startX, y: event.clientY - current.startY }))
+    drag.x = event.clientX - drag.startX
+    drag.y = event.clientY - drag.startY
+    if (!animationFrameRef.current) {
+      animationFrameRef.current = window.requestAnimationFrame(() => {
+        const rotation = Math.max(-12, Math.min(12, dragRef.current.x / 14))
+        if (cardRef.current) cardRef.current.style.transform = `translate3d(${dragRef.current.x}px, ${dragRef.current.y}px, 0) rotate(${rotation}deg)`
+        animationFrameRef.current = 0
+      })
+    }
   }
 
   const handlePointerUp = () => {
+    const drag = dragRef.current
     if (!drag.active) return
     if (drag.x > 90) decide('liked')
     else if (drag.x < -90) decide('skipped')
     else if (drag.y < -90) decide('played')
-    else setDrag({ startX: 0, startY: 0, x: 0, y: 0, active: false })
+    else {
+      dragRef.current = { startX: 0, startY: 0, x: 0, y: 0, active: false }
+      setIsDragging(false)
+      if (cardRef.current) cardRef.current.style.transform = 'translate3d(0, 0, 0) rotate(0deg)'
+    }
   }
 
   const resetGame = (id) => setDecisions((current) => {
@@ -312,9 +334,6 @@ function App() {
   }
 
   const visibleLibrary = activeTab === 'liked' ? likedGames : activeTab === 'played' ? playedGames : declinedGames
-  const rotation = Math.max(-12, Math.min(12, drag.x / 14))
-  const cardStyle = { transform: `translate(${drag.x}px, ${drag.y}px) rotate(${rotation}deg)` }
-
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -358,7 +377,7 @@ function App() {
               <>
                 <div className="swipe-hint left">← skip</div>
                 <div className="swipe-hint right">want to play →</div>
-                <article className={`game-card ${currentGame.color}`} style={cardStyle} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}>
+                <article ref={cardRef} className={`game-card ${currentGame.color} ${isDragging ? 'dragging' : ''}`} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}>
                   <div className="card-art">{currentGame.image ? <img className="game-image" src={currentGame.image} alt="" decoding="async" onError={(event) => { event.currentTarget.style.display = 'none' }} /> : <><span className="art-orb orb-one" /><span className="art-orb orb-two" /><span className="art-symbol">✦</span></>}<span className="card-badge">{currentGame.badge}</span></div>
                   <div className="card-content">
                     <div className="card-meta"><span>{currentGame.genre}</span><span>·</span><span>{formatReleaseDate(currentGame.releaseDate)}</span><span>·</span><span>{currentGame.hours}</span></div>
