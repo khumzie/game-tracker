@@ -126,6 +126,8 @@ function App() {
   })
   const [activeTab, setActiveTab] = useState('discover')
   const [filter, setFilter] = useState('All')
+  const [browseYear, setBrowseYear] = useState('')
+  const [browseGenre, setBrowseGenre] = useState('')
   const [isDragging, setIsDragging] = useState(false)
   const dragRef = useRef({ startX: 0, startY: 0, x: 0, y: 0, active: false })
   const cardRef = useRef(null)
@@ -178,9 +180,14 @@ function App() {
 
   const currentGames = useMemo(() => {
     const undecided = catalog.filter((game) => !decisions[game.id])
-    if (filter === 'All') return undecided
-    return undecided.filter((game) => game.platforms.includes(filter))
-  }, [catalog, decisions, filter])
+    return undecided.filter((game) => {
+      const matchesPlatform = filter === 'All' || game.platforms.includes(filter)
+      const year = releaseYear(game.releaseDate)
+      const matchesYear = !browseYear || (browseYear === UNKNOWN_YEAR ? !year : year === browseYear)
+      const matchesGenre = !browseGenre || game.genre === browseGenre
+      return matchesPlatform && matchesYear && matchesGenre
+    })
+  }, [catalog, decisions, filter, browseYear, browseGenre])
 
   const likedGames = catalog.filter((game) => decisions[game.id] === 'liked')
   const playedGames = catalog.filter((game) => decisions[game.id] === 'played')
@@ -320,6 +327,7 @@ function App() {
   const genres = [...new Set(catalog.map((game) => game.genre).filter(Boolean))].sort()
   const knownYears = [...new Set(catalog.map((game) => releaseYear(game.releaseDate)).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
   const hasUnknownYears = catalog.some((game) => !releaseYear(game.releaseDate))
+  const hasActiveBrowseFilters = filter !== 'All' || browseYear || browseGenre
   const removableGames = catalog.filter((game) => (!removeYear || (removeYear === UNKNOWN_YEAR ? !releaseYear(game.releaseDate) : releaseYear(game.releaseDate) === removeYear)) && (!removeGenre || game.genre === removeGenre))
   const removeGames = () => {
     if ((!removeYear && !removeGenre) || !removableGames.length) return
@@ -371,6 +379,7 @@ function App() {
           </div>}
           {showFilters && <div className="filters">
             <div className="filter-group"><span>Platforms</span>{['All', 'PC', 'Xbox', 'PlayStation', 'Switch'].map((item) => <button key={item} className={filter === item ? 'selected' : ''} onClick={() => setFilter(item)}>{item === 'All' ? 'All platforms' : `${platformIcons[item]} ${item}`}</button>)}</div>
+            <div className="filter-group browse-filters"><span>Swipe list</span><select aria-label="Filter swipe list by release year" value={browseYear} onChange={(event) => setBrowseYear(event.target.value)}><option value="">All release years</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Filter swipe list by genre" value={browseGenre} onChange={(event) => setBrowseGenre(event.target.value)}><option value="">All categories</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select>{hasActiveBrowseFilters && <button className="clear-filter-button" onClick={() => { setFilter('All'); setBrowseYear(''); setBrowseGenre('') }}>Clear swipe filters</button>}</div>
             <div className="bulk-remove"><strong>Bulk remove</strong><span>Remove matching games from this device, including games with unknown release dates.</span><div className="bulk-remove-controls"><select aria-label="Release year to remove" value={removeYear} onChange={(event) => setRemoveYear(event.target.value)}><option value="">Any release year</option>{knownYears.map((year) => <option key={year} value={year}>{year}</option>)}{hasUnknownYears && <option value={UNKNOWN_YEAR}>Unknown release year</option>}</select><select aria-label="Category to remove" value={removeGenre} onChange={(event) => setRemoveGenre(event.target.value)}><option value="">Any category</option>{genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)}</select><button className="remove-button" onClick={removeGames} disabled={(!removeYear && !removeGenre) || !removableGames.length}>Remove {removableGames.length.toLocaleString()}</button></div></div>
           </div>}
 
