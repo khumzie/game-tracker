@@ -13,6 +13,15 @@ if (!tokenResponse.ok) throw new Error(`Twitch authentication failed: ${tokenRes
 const { access_token: accessToken } = await tokenResponse.json()
 
 const normalizeTitle = (title) => title.toLowerCase().replace(/[^a-z0-9]/g, '')
+const expansionCategories = new Set([2, 4])
+const minorExpansionTitle = /\b(quest|mission|episode|chapter|scenario|challenge|trial|contract|operation|pack|bundle|skin|costume|outfit|soundtrack|artbook)\b/i
+const majorExpansionTitle = /\b(expansion|blood and wine|hearts? of stone|phantom liberty|shadow of the erdtree|the frozen wilds|far harbor|nuka[- ]world)\b/i
+const isMajorExpansion = (item, time) => {
+  if (!expansionCategories.has(item.category ?? 0)) return true
+  if (majorExpansionTitle.test(item.name || '')) return true
+  const hours = [time?.normally, time?.hastily, time?.completely].filter(Boolean).sort((a, b) => b - a)[0]
+  return Boolean(hours && hours >= 8 * 3600 && !minorExpansionTitle.test(item.name || ''))
+}
 const mapPlatform = (name) => {
   const value = name.toLowerCase()
   if (value.includes('pc') || value.includes('windows') || value.includes('linux') || value.includes('mac')) return 'PC'
@@ -95,6 +104,7 @@ const timeToBeat = await fetchTimeToBeat(source.map((item) => item.id))
 const merged = new Map()
 for (const item of source) {
   const time = timeToBeat.get(item.id)
+  if (!isMajorExpansion(item, time)) continue
   const hours = time?.normally || time?.hastily || time?.completely
   const game = {
     id: `igdb-${item.id}`,

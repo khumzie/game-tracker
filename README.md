@@ -11,6 +11,8 @@ gameflow is a mobile-first game tracker PWA. Discover games with a quick swipe:
 
 The catalog starts with a small built-in set, then grows through the **Import** control. The primary import uses Wikidata's public, no-account-needed query service. Its default scope is PC plus Xbox One/Series, PlayStation 4/5, and Nintendo Switch; Wii, DS, and older console-only games are excluded. The repository includes a GitHub Actions workflow that runs the exhaustive free catalog sync daily and can also be started manually. It writes a published `public/catalog.json` file, which the PWA loads automatically on startup. This means the crawl runs on GitHub's server even when the phone app is closed; the app only needs to open later to receive the latest catalog. The workflow scans in reliable 100-row batches with retries until Wikidata has no more matching rows, then deduplicates by title and combines platforms. You can also upload a JSON/CSV export or optionally connect a RAWG API key. Imported games are normalized to one canonical record per title and combine available platforms, so cross-platform games never appear as duplicates.
 
+The IGDB catalog keeps standalone games, remakes, remasters, and substantial expansions. Small expansion records such as one-off quests, missions, episodes, and cosmetic/bonus packs are excluded so they do not appear as separate games.
+
 For GitHub Pages, set the repository's Pages source to **GitHub Actions** and enable **Read and write permissions** for Actions under repository settings. The included deployment workflow publishes the PWA on pushes to `main`.
 
 ### Store free IGDB credentials
